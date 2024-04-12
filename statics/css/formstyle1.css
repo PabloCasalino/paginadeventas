@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+--color-input-border:black;
+--color-background-form: rgb(57, 88, 148);
+}
+
+#formulario {
+    margin: 5%;
+    padding: 5%;
+    background-color: var(--color-background-form);
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+#form {
+    text-align: center;
+}
+
+#form-title {
+    text-align: center;
+    margin-left: 10vh;
+   
+}
+
+#datos-personales {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 10px
+}
+
+#conocimiento {
+    padding: 20px;
+}
+
+.personales {
+   margin: 5px;
+   border: 1px solid var(--color-input-border);
+   height: 20px;
+   border-radius: 10px;
+}
+
+#estudios{
+    margin: 10px;
+}
+
+#comentarios {
+    margin:15px;
+}
+
+#parr {
+    margin:20px;
+}

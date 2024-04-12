@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./statics/style.css"> -->
+    <link rel="stylesheet" href="../statics/css/formstyle2.css">
+    <title>Registro</title>
+  </head>
+  <body>
+    <section id="formulario">
+    <div >
+        <!-- espacio para logo -->
+        <img id="logo" src="../statics/img/logo_formulario.png" alt="formulario_logo">
+
+    </div>
+    <h1 id="form-title">Formulario de aceptación</h1>
+
+    <form id="form" action="https://formspree.io/f/mgeglwnj"
+    method="POST" autocomplete="off">
+      <fieldset id="datos-personales">
+        <legend>Datos Personales</legend>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input class="personales" type="text" name="nombre" id="nombre" required placeholder="  Ingrese su nombre aquí"/>
+    
+            <label for="apellido">Apellido:</label>
+            <input class="personales" type="text" name="nombre" id="apellido" required placeholder="  Ingrese su apellido aquí..."/>
+        </div>
+    </br>
+        <div>
+            <label for="direccion">Dirección:</label>
+            <input class="personales" type="text" name="nombre" id="direccion" required placeholder="  Ingrese su dirección aquí..."/>
+    
+            <label for="ciudad">Ciudad:</label>
+            <input class="personales" type="text" name="ciudad" id="ciudad" required placeholder="  Ingrese su  ciudad aquí..."/>
+        </div>
+    </br>
+        <div>
+            <label for="cp">Código postal:</label>
+            <input class="personales" type="number" name="cp" id="cp" required placeholder="  Ingrese su Código Postal aquí..."/>
+    
+            <label for="telefono">Télefono:</label>
+            <input class="personales" type="tel" name="telefono" id="telefono" required placeholder="  Ingrese su teléfono aquí..."/>
+        </div>
+    </br>
+
+    <div>
+        <label for="nacimiento">Fecha de Nacimiento</label>
+        <input class="personales" type="date" name="nombre" id="nacimiento" required/>
+    </div>
+
+    <div>
+        <p> Género </p>
+        <input type="radio" name="genero" id="m" required/>
+        <label for="m">Masculino</label>
+        <input type="radio" name="genero" id="f" required/>
+        <label for="f">Femenino</label>
+        <input type="radio" name="genero" id="o" required/>
+        <label for="o">Otro</label>     
+    </div>
+
+</fieldset>
+<p id="conocimiento">Conocimientos previos:
+     <input type="checkbox" name="conocimientos" value="Html"/>Html
+    <input type="checkbox" name="conocimientos" value="CSS"/>CSS
+    <input type="checkbox" name="conocimientos" value="Boostrap"/>Boostrap
+    <input type="checkbox" name="conocimientos" value="Javascript"/>Javascript <br>
+    <input type="checkbox" name="conocimientos" value="Base de Datos"/>Base de Datos
+    <input type="checkbox" name="conocimientos" value="Python"/>Python
+    <input type="checkbox" name="conocimientos" id="Django">Django
+</p>
+
+<label for="estudios" id="estudios">Estudios: </label>
+    <select name="estudios" id="estudios">
+        <option class="estudios" value="primaria">Primaria</option>
+        <option class="estudios" value="secundaria">Secundaria</option>
+        <option class="estudios" value="terciario">Terciario</option>
+        <option class="estudios" value="universitario">Universitario</option>
+    </select>
+
+    <div id="comentarios">
+        <label for="comentarios">Comentarios</label>
+        <br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="220"></textarea>
+    </div>
+    <input class="btn" type="submit" value="Enviar">
+    <input class="btn" type="reset" value="Borrar">
+
+    <p id="parr">Al presionar el botón enviar, acepta los términos y condiciones de la empresa.</p>
+
+    </form>
+</section>
+  </body>
+</html>
