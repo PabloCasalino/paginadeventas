@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./statics/img/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./statics/css/style.css" />
+  <link rel="stylesheet" href="./statics/css/header.css" />
   <title>ComprasOnLine.Com</title>
 </head>
 
@@ -14,25 +14,51 @@
 
   <header>
 
-    <div class="on-line">
-      <img id="logo" src="./statics/img/traced-logo_fondo_bco (1).png" alt="logo">
+    <div class="container-hero">
+      <div class="container hero">
+
+        <div class="customer-support">
+          <i class="fa-solid fa-headset"></i> <!--Icono auriculares-->
+          <div class="content-customer-support">
+            <span class="text">Soporte al cliente</span>
+            <span class="number">123-456-7890</span>
+          </div>
+        </div>
+
+        <div class="container-logo">  
+          <h1 class="logo"><a href="/">ComprasOnline.com</a></h1>
+        </div>
+
+        <div class="container-user">
+          <i class="fa-solid fa-user"></i> <!--Icono usuario-->
+          <i class="fa-solid fa-basket-shopping"></i> <!--Icono carrito de compras-->
+          <div class="content-shopping-cart">
+            <span class="text">Carrito</span>
+            <span class="number">(0)</span>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <nav class="on-line">
+    <div class="container-navbar">
+      <nav class="navbar container">
+        <i class="fa-solid fa-bars"></i> <!--Icono menú hamburguesa-->
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="templates/suscribirse.html">Registro</a></li>
+          <li><a href="#">Más</a></li>
+        </ul>
 
-      <div id="title">
-        <h1 class="title">ComprasOnLine.com</h1>
-      </div>
-      <div id="nav-list">
-        <!-- <a class="nav-items" href="/">Catalogo</a> -->
-        <a class="nav-items" href="./templates/suscribirse.html">Suscribirse</a>
-        <!-- <a class="nav-items" href="./templates/favoritos.html">Favoritos</a> -->
-        <!-- <a class="nav-items" href="./templates/carrito_de_compras.html">Carrito de compras</a> -->
-        <a class="nav-items"
-          href="https://api.whatsapp.com/send/?phone=%2B543516439146&text&type=phone_number&app_absent=0"
-          target="_blank">Whatsapp</a>
-      </div>
-    </nav>
+        <form class="search-form">
+          <input type="search" placeholder="Buscar..." />
+          <button class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i> <!--Icono busqueda-->
+          </button>
+        </form>
+      </nav>
+    </div>
 
   </header>
 
@@ -91,6 +117,11 @@
     </div>
 
   </footer>
+  <!-- Script para el uso de iconos-->
+  <script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
 </body>
 
 </html>
