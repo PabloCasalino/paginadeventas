@@ -63,6 +63,10 @@ html {
 	gap: 0.5rem;
 }
 
+#logo-img{
+    width: 8rem;
+}
+
 .container-logo i {
 	font-size: 3rem;
 }
