@@ -2,60 +2,54 @@
     margin: 0;
     padding: 0;
 }
-:root{
---color-input-border:black;
---color-background-form: rgb(57, 88, 148);
+
+:root {
+    --color-input-border: black;
+    --color-background-form: rgb(57, 88, 148);
 }
 
-#formulario {
-    margin: 5%;
-    padding: 5%;
-    background-color: var(--color-background-form);
+#logo-container {
+    display: flex;
+    justify-content: center;
 }
 
 #logo {
-    width: 70px;
-    height: 70px;
-    margin-left: 50%;
-    margin-right: 50%;
+    width: 8em;
 }
 
-#form {
-    text-align: center;
+#container,
+.form-item,
+#parr {
+    display: flex;
+    justify-content: center;
+
 }
 
-#form-title {
-    text-align: center;
-    margin-left: 10vh;
-   
+.form-item{
+    margin-bottom: 12px;
 }
 
-#datos-personales {
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
-    padding: 10px
-}
-
-#conocimiento {
-    padding: 20px;
+.datos-personales {
+    display: block;
 }
 
 .personales {
-   margin: 5px;
-   border: 1px solid var(--color-input-border);
-   height: 20px;
-   border-radius: 10px;
+    padding: 2px;
+    margin: 3px;
+    width: 350px;
+    height: 25px;
+    border-radius: 8px;
 }
 
-#estudios{
-    margin: 10px;
+fieldset {
+    width: 40vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
 }
 
-#comentarios {
-    margin:15px;
-}
-
-#parr {
-    margin:20px;
+#genero p {
+    padding: 14px;
 }
