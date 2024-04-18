@@ -8,12 +8,6 @@
     --color-background-form: rgb(57, 88, 148);
 }
 
-
-
-.form-item{
-    margin-bottom: 12px;
-}
-
 #logo-container {
     display: flex;
     justify-content: center;
@@ -31,19 +25,29 @@
 
 }
 
+.form-item{
+    margin-bottom: 12px;
+}
+
 .datos-personales {
     display: block;
 }
 
-
 .personales {
     padding: 2px;
     margin: 3px;
+    width: 350px;
+    height: 25px;
+    border-radius: 8px;
 }
 
 fieldset {
-    padding: 2vw;
-
+    width: 40vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
 }
 
 #genero p {
