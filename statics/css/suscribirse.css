@@ -2,20 +2,50 @@
     margin: 0;
     padding: 0;
 }
-:root{
---color-input-border:black;
---color-background-form: rgb(57, 88, 148);
+
+:root {
+    --color-input-border: black;
+    --color-background-form: rgb(57, 88, 148);
 }
 
 
-#logo-container{
+
+.form-item{
+    margin-bottom: 12px;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 8em;
+}
+
+#container,
+.form-item,
+#parr {
     display: flex;
     justify-content: center;
 
 }
 
-#logo{
-    width: 8em;
+.datos-personales {
+    display: block;
 }
 
 
+.personales {
+    padding: 2px;
+    margin: 3px;
+}
+
+fieldset {
+    padding: 2vw;
+
+}
+
+#genero p {
+    padding: 14px;
+}

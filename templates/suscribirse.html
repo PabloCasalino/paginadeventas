@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <section>
+    <section id="formulario">
         <div id="logo-container">
             <!-- espacio para logo -->
             <img id="logo" src="../statics/img/logo_formulario.png" alt="formulario_logo">
@@ -24,42 +24,46 @@
                 <fieldset id="datos-personales">
                     <legend>Datos Personales</legend>
                     <div>
-                        <label for="nombre">Nombre:</label>
+                        <label class="datos-personales" for="nombre">Nombre:</label>
                         <input class="personales" type="text" name="nombre" id="nombre" required
                             placeholder="  Ingrese su nombre aquí" />
+                    </div>
+                    <div>
 
-                        <label for="apellido">Apellido:</label>
+                        <label class="datos-personales" for="apellido">Apellido:</label>
                         <input class="personales" type="text" name="nombre" id="apellido" required
                             placeholder="  Ingrese su apellido aquí..." />
                     </div>
                     </br>
                     <div>
-                        <label for="direccion">Dirección:</label>
+                        <label class="datos-personales" for="direccion">Dirección:</label>
                         <input class="personales" type="text" name="nombre" id="direccion" required
                             placeholder="  Ingrese su dirección aquí..." />
-
-                        <label for="ciudad">Ciudad:</label>
+                    </div>
+                    <div>
+                        <label class="datos-personales" for="ciudad">Ciudad:</label>
                         <input class="personales" type="text" name="ciudad" id="ciudad" required
                             placeholder="  Ingrese su  ciudad aquí..." />
                     </div>
                     </br>
                     <div>
-                        <label for="cp">Código postal:</label>
+                        <label class="datos-personales" for="cp">Código postal:</label>
                         <input class="personales" type="number" name="cp" id="cp" required
                             placeholder="  Ingrese su Código Postal aquí..." />
-
-                        <label for="telefono">Télefono:</label>
+                    </div>
+                    <div>
+                        <label class="datos-personales" for="telefono">Télefono:</label>
                         <input class="personales" type="tel" name="telefono" id="telefono" required
                             placeholder="  Ingrese su teléfono aquí..." />
                     </div>
                     </br>
 
                     <div>
-                        <label for="nacimiento">Fecha de Nacimiento</label>
+                        <label class="datos-personales" for="nacimiento">Fecha de Nacimiento</label>
                         <input class="personales" type="date" name="nombre" id="nacimiento" required />
                     </div>
 
-                    <div>
+                    <div id="genero">
                         <p> Género </p>
                         <input type="radio" name="genero" id="m" required />
                         <label for="m">Masculino</label>
