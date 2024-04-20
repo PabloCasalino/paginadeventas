@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./statics/img/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./statics/css/style.css" />
+  <link rel="stylesheet" href="./statics/css/header_footer.css" />
+  <link rel="stylesheet" href="statics/css/index.css">
   <title>ComprasOnLine.Com</title>
 </head>
 
@@ -14,83 +15,249 @@
 
   <header>
 
-    <div class="on-line">
-      <img id="logo" src="./statics/img/traced-logo_fondo_bco (1).png" alt="logo">
+    <div class="container-hero">
+      <div class="container hero">
+
+        <div class="customer-support">
+          <i class="fa-solid fa-headset"></i> <!--Icono auriculares-->
+          <div class="content-customer-support">
+            <span class="text">Soporte al cliente</span>
+            <span class="number">123-456-7890</span>
+          </div>
+        </div>
+
+        <div class="container-logo">  
+          <img src="statics/img/traced-logo_fondo_bco (1).ico" alt="" id="logo-img">
+          <h1 class="logo"><a href="/">ComprasOnline.com</a></h1>
+        </div>
+
+        <div class="container-user">
+          <i class="fa-solid fa-user"></i> <!--Icono usuario-->
+          <i class="fa-solid fa-basket-shopping"></i> <!--Icono carrito de compras-->
+          <div class="content-shopping-cart">
+            <span class="text">Carrito</span>
+            <span class="number">(0)</span>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <nav class="on-line">
+    <div class="container-navbar">
+      <nav class="navbar container">
+        <i class="fa-solid fa-bars"></i> <!--Icono menú hamburguesa-->
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="templates/suscribirse.html">Registro</a></li>
+          <li><a href="#">Más</a></li>
+        </ul>
 
-      <div id="title">
-        <h1 class="title">ComprasOnLine.com</h1>
-      </div>
-      <div id="nav-list">
-        <!-- <a class="nav-items" href="/">Catalogo</a> -->
-        <a class="nav-items" href="./templates/suscribirse.html">Suscribirse</a>
-        <!-- <a class="nav-items" href="./templates/favoritos.html">Favoritos</a> -->
-        <!-- <a class="nav-items" href="./templates/carrito_de_compras.html">Carrito de compras</a> -->
-        <a class="nav-items"
-          href="https://api.whatsapp.com/send/?phone=%2B543516439146&text&type=phone_number&app_absent=0"
-          target="_blank">Whatsapp</a>
-      </div>
-    </nav>
+        <form class="search-form">
+          <input type="search" placeholder="Buscar..." />
+          <button class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i> <!--Icono busqueda-->
+          </button>
+        </form>
+      </nav>
+    </div>
 
   </header>
 
-  <section id="categories-container">
-
-    <!-- Links para las diferentes categorías del producto -->
-    <a class="categories-items" href="./templates/hogar.html"><img src="./statics/img/Hogar/CASITA-228x228.png"
-        alt="hogar">
-      <p>Hogar</p>
-    </a>
-    <a class="categories-items" href="./templates/accesorios.html"><img
-        src="./statics/img/Acc/15302-removebg-preview-228x228.jpg" alt="accesorios">
-      <p>Accesorios</p>
-    </a>
-    <a class="categories-items" class="en-linea" href="./templates/fitness.html"><img
-        src="./statics/img/Fitness/-_NE-1014076-228x228.jpg" alt="fitness">
-      <p>Fitness</p>
-    </a>
-
-  </section>
 
 
+  <main>
 
-  <footer>
-
-    <div id="footer-container">
-
-      <div class="contacto">
-        <h3>Contacto</h3>
-        <p>correo@comprasonline.com.ar</p>
-        <p>Teléfono: +54 351 1234567</p>
+    <div class="titulo-categorias">
+      <h1>Categorias</h1>
+    </div>
+    <section class="contenedor-categorias">      
+      <div class="categorias-items">
+        <img id="img-categorias" src="/paginadeventas/statics/img/Acc/bolso.png" alt="Accesorios">
+        <a id="link-categorias" href="/paginadeventas/templates/accesorios.html" >Accesorios</a>
       </div>
-
-      <div class="redes">
-        <div>
-          <a href="/">Facebook</a>
-        </div>
-        <div>
-          <a href="/">Intagram</a>
-        </div>
-        <div>
-          <a href="/">X</a>
-        </div>
-        <div>
-          
-        <a href="/">Whatsapp</a>
-        </div>
-      
+      <div class="categorias-items">
+        <img id="img-categorias" src="/paginadeventas/statics/img/Hogar/hogar.png" alt="Hogar">
+        <a id="link-categorias" href="/paginadeventas/templates/hogar.html"> Hogar</a>
       </div>
-
-      <div class="legales">
-        <p>&copy; 2024 ComprasOnLine.com. Todos los derechos reservados.</p>
-        <a href="#">Términos y Condiciones</a>
-        <a href="#">Política de Privacidad</a>
+      <div class="categorias-items">
+        <img id="img-categorias" src="/paginadeventas/statics/img/Fitness/aptitud-fisica.png" alt="Fitness">
+        <a id="link-categorias" href="/paginadeventas/templates/fitness.html"> Fitness</a>
       </div>
+      <div class="categorias-items">
+        <img id="img-categorias" src="/paginadeventas/statics/img/Indumentaria/sudadera-con-capucha.png" alt="Indumentaria">
+        <a id="link-categorias" href="/paginadeventas/templates/indumentaria.html"> Indumentaria</a>
+      </div>
+    </section>
+
+    <div class="titulo-destacados">
+      <h1>Destacados</h1>
     </div>
 
+    <section class="contenedor-destacados">
+      <div class="destacados-items">
+        <img  class="img-destacados"  src="/paginadeventas/statics/img/Acc/bandolera-head.jpg" alt="calculadora">
+        <h3 class="producto">BANDOLERA HEAD</h3>
+        <p  class="descripcion">Material: microfibra. Bolsillo frontal. Medidas: 16x16x5cm. Color: NEGRO/AZUL</p>
+        <h5 class="precio">$14,999.00</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar </button>
+      </div>
+      <div class="destacados-items">
+        <img class="img-destacados"  src="/paginadeventas/statics/img/Fitness/MOCHILA CAMPING ALPINE SKATE.jpg" alt="calculadora">
+        <h3 class="producto">MOCHILA CAMPING ALPINE SKATE</h3>
+        <p class="descripcion">Medidas: 54x35x16cm. Capacidad de 45+5L, espalda y tiras acolchonadas con tela mesh</p>
+        <h5 class="precio">$67,999.00</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+      <div class="destacados-items">
+        <img  class="img-destacados" src="/paginadeventas/statics/img/Fitness/COLCHONETA-100x40x4cm.jpg" alt="calculadora">
+        <h3 class="producto">COLCHONETA 100X40X4 CM</h3>
+        <p class="descripcion">Colores: Rojo - Negro - Azul- Fucsia De alta densidad, 4 cm x 40 cm x 100 cm</p>
+        <h5 class="precio">$19,999.00</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+      <div class="destacados-items">
+        <img  class="img-destacados" src="/paginadeventas/statics/img/Hogar/calculadora.jpg" alt="calculadora">
+        <h3 class="producto">Producto</h3>
+        <p class="descripcion">Descripcion</p>
+        <h5 class="precio">Precio</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+      <div class="destacados-items">
+        <img class="img-destacados"  src="/paginadeventas/statics/img/Hogar/calculadora.jpg" alt="calculadora">
+        <h3 class="producto">Producto</h3>
+        <p class="descripcion">Descripcion</p>
+        <h5 class="precio">Precio</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+      <div class="destacados-items">
+        <img  class="img-destacados" src="/paginadeventas/statics/img/Hogar/calculadora.jpg" alt="calculadora">
+        <h3 class="producto">Producto</h3>
+        <p class="descripcion">Descripcion</p>
+        <h5 class="precio">Precio</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+      <div class="destacados-items">
+        <img  class="img-destacados" src="/paginadeventas/statics/img/Hogar/calculadora.jpg" alt="calculadora">
+        <h3 class="producto">Producto</h3>
+        <p class="descripcion">Descripcion</p>
+        <h5 class="precio">Precio</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+      <div class="destacados-items">
+        <img class="img-destacados"  src="/paginadeventas/statics/img/Hogar/calculadora.jpg" alt="calculadora">
+        <h3 class="producto">Producto</h3>
+        <p class="descripcion">Descripcion</p>
+        <h5 class="precio">Precio</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+      <div class="destacados-items">
+        <img  class="img-destacados" src="/paginadeventas/statics/img/Hogar/calculadora.jpg" alt="calculadora">
+        <h3 class="producto">Producto</h3>
+        <p class="descripcion">Descripcion</p>
+        <h5 class="precio">Precio</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+      <div class="destacados-items">
+        <img  class="img-destacados" src="/paginadeventas/statics/img/Hogar/calculadora.jpg" alt="calculadora">
+        <h3 class="producto">Producto</h3>
+        <p class="descripcion">Descripcion</p>
+        <h5 class="precio">Precio</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+      <div class="destacados-items">
+        <img  class="img-destacados" src="/paginadeventas/statics/img/Hogar/calculadora.jpg" alt="calculadora">
+        <h3 class="producto">Producto</h3>
+        <p class="descripcion">Descripcion</p>
+        <h5 class="precio">Precio</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+      <div class="destacados-items">
+        <img class="img-destacados"  src="/paginadeventas/statics/img/Hogar/calculadora.jpg" alt="calculadora">
+        <h3 class="producto">Producto</h3>
+        <p class="descripcion">Descripcion</p>
+        <h5 class="precio">Precio</h5>
+        <button id="boton-carrito" class="fa-solid fa-basket-shopping">Agregar</button>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="container container-footer">
+      <div class="menu-footer">
+        <div class="contact-info">
+          <p class="title-footer">Información de Contacto</p>
+          <ul>
+            <li>
+              Dirección: 81 Pennington Lane Vernon Rockville, CT
+              06066
+            </li>
+            <li>Teléfono: 123-456-7890</li>
+            <li>Fax: 55555300</li>
+            <li>EmaiL: comprasOnline@support.com</li>
+          </ul>
+          <div class="social-icons">
+            <span class="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </span>
+            <span class="twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </span>
+            <span class="youtube">
+              <i class="fa-brands fa-youtube"></i>
+            </span>
+            <span class="pinterest">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </span>
+            <span class="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="information">
+          <p class="title-footer">Información</p>
+          <ul>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Información Envíos</a></li>
+            <li><a href="#">Politicas de Privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Contactános</a></li>
+          </ul>
+        </div>
+
+        <div class="my-account">
+          <p class="title-footer">Mi cuenta</p>
+
+          <ul>
+            <li><a href="#">Mi cuenta</a></li>
+            <li><a href="#">Historial de ordenes</a></li>
+            <li><a href="#">Lista de deseos</a></li>
+            <li><a href="#">Boletín</a></li>
+            <li><a href="#">Reembolsos</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>
+          ComprasOnline.com. Todos los derechos reservados &copy; 2024
+        </p>
+
+        <img src="statics/img/payment.png" alt="Pagos" id="pagos">
+      </div>
+    </div>
   </footer>
+
+  <!-- Script para el uso de iconos-->
+  <script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
 </body>
 
 </html>
