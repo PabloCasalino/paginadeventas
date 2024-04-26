@@ -4,8 +4,9 @@
 }
 
 :root {
-    --color-input-border: black;
-    --color-background-form: rgb(57, 88, 148);
+	--primary-color: #4353df;
+	--background-color: #afbed6;
+	--dark-color: #151515;
 }
 
 #logo-container {
@@ -52,4 +53,8 @@ fieldset {
 
 #genero p {
     padding: 14px;
+}
+
+#comentario{
+    width: 40vw;
 }
