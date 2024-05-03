@@ -9,6 +9,11 @@
 	--dark-color: #151515;
 }
 
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
 #logo-container {
     display: flex;
     justify-content: center;
@@ -26,12 +31,19 @@
 
 }
 
-.form-item{
+.form-item {
     margin-bottom: 12px;
 }
 
-.datos-personales {
+.datos-personales,
+#genero {
     display: block;
+    font-family: 'Poppins';
+    font-size: 1.5em;
+}
+
+#genero {
+    display:flex;
 }
 
 .personales {
@@ -53,8 +65,4 @@ fieldset {
 
 #genero p {
     padding: 14px;
-}
-
-#comentario{
-    width: 40vw;
 }
