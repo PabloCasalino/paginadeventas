@@ -121,3 +121,4 @@ var footerContent = `
 </footer>
 `
 document.body.insertAdjacentHTML("afterend",footerContent);  
+
