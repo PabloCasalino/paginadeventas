@@ -23,19 +23,21 @@
 
         <h1 class="form-item">Formulario de aceptación</h1>
 
-        <fieldset id="datos-personales">
+        <fieldset id="datos-personales" autocomplete="off">
           <legend>Datos Personales</legend>
           <div>
             <label class="datos-personales" for="nombre">Nombre:</label>
             <input class="personales" type="text" name="nombre" id="nombre" required
               placeholder="  Ingrese su nombre aquí" />
           </div>
+          <div id="resultadoNombre"></div>
           <div>
 
             <label class="datos-personales" for="apellido">Apellido:</label>
             <input class="personales" type="text" name="nombre" id="apellido" required
               placeholder="  Ingrese su apellido aquí..." />
           </div>
+          <div id="resultadoApellido"></div>
           <div>
             <label class="datos-personales" for="direccion">Dirección:</label>
             <input class="personales" type="text" name="nombre" id="direccion" required
@@ -75,9 +77,9 @@
         <div id="comentarios">
           <label for="comentarios">Comentarios</label>
           <br>
-          <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="220"></textarea>
+          <textarea name="comentario" id="comentario" cols="75" rows="10" maxlength="220"></textarea>
         </div>
-        <input class="btn" type="submit" value="Enviar">
+        <input class="btn-enviar" type="submit" value="Enviar">
         <input class="btn" type="reset" value="Borrar">
       </form>
     </div>
@@ -89,6 +91,7 @@
     <!-- Script para el uso de iconos-->
     <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
     <script src="../statics/script/header-footer.js"></script>
+    <script src="../statics/script/suscribirse.js"></script>
 
 </body>
 
