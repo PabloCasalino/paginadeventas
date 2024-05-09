@@ -4,35 +4,38 @@
 }
 
 :root {
-	--primary-color: #4353df;
-	--background-color: #afbed6;
-	--dark-color: #151515;
+    --primary-color: #4353df;
+    --background-color: #afbed6;
+    --dark-color: #151515;
 }
 
-html {
-    font-size: 62.5%;
-    font-family: 'Poppins', sans-serif;
+#logo {
+    width: 18em;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-size: 2.5em;
+}
+
+#formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    background: linear-gradient(var(--background-color), var(--primary-color));
 }
 
 #logo-container {
     display: flex;
-    justify-content: center;
-}
-
-#logo {
-    width: 8em;
-}
-
-#container,
-.form-item,
-#parr {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-.form-item {
-    margin-bottom: 12px;
+#logo-container img,
+#logo-container h1 {
+    margin-top: 50%;
 }
 
 .datos-personales,
@@ -42,19 +45,39 @@ html {
     font-size: 1.5em;
 }
 
-#genero {
-    display:flex;
-}
-
-.personales {
-    padding: 2px;
-    margin: 3px;
-    width: 350px;
-    height: 25px;
+#container {
     border-radius: 8px;
 }
 
-input{
+.personales {
+    padding: 18px;
+    margin: 3px;
+    width: 350px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:425px) {
+    .personales {
+        padding: 18px;
+        margin: 3px;
+        width: 300px;
+        height: 30px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .personales {
+        padding: 18px;
+        margin: 3px;
+        width: 270px;
+        height: 30px;
+        border-radius: 8px;
+    }
+}
+
+input {
     padding: 10px;
 }
 
@@ -68,20 +91,38 @@ fieldset {
 }
 
 #genero p {
-    padding: 14px;
+    text-align: start;
+    text-decoration: underline;
+    padding: 7px;
 }
 
-#comentarios{
-    display:flex;
+#comentarios {
+    display: flex;
     flex-direction: column;
-    margin-bottom: 3px;
-
+    align-items: center;
 }
 
-#comentario{
-    padding: 5px;
+#comentario {
+    width: 100%; 
+    max-width: 100%; 
 }
 
-.titulo{
+#parr {
+    color:#fff
+}
+
+.titulo {
     font-size: 1.5em;
+}
+
+.btn{
+    border-radius: 5px;
+    justify-content:center ;
+    width: 120px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 20px; */
 }
