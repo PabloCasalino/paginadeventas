@@ -1,0 +1,231 @@
+
+:root{
+    --primary-color: #4353df;
+	--background-color: #afbed6;
+	--dark-color: #151515;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Seccion categorias */
+
+.titulo-categorias{
+    text-align: left;
+    font-style: italic;
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.contenedor-categorias{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-around;
+    height: 30vh;
+    border-radius: 5%;
+    
+}
+
+.categorias-items{
+    text-align: center;
+    text-decoration: none;
+    display:grid;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 1px 1px whitesmoke;
+    border-radius: 5%;
+}
+
+.categorias-items:hover{
+    box-shadow: 0px 0px 10px 10px gray;
+    border-radius: 5%;
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    overflow: hidden;
+}
+
+#img-categorias{
+    width: 10vw;
+    height: 20vh;
+}
+
+#link-categorias{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* Seccion hogar */
+
+.titulo-hogar{
+    text-align: left;
+    font-style: italic;
+    margin: 20px;
+    font-size: 1rem;
+
+}
+
+.img-hogar:hover{
+    opacity: 70%;
+    -webkit-transform:scale(1.2);transform:scale(1.2);
+    overflow: hidden;
+}
+
+.contenedor-hogar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,auto);
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-around; 
+       
+    
+}
+
+.hogar-items{
+    
+    border-radius: 3%;
+    text-align: center;
+    height: 60vh;
+    width: auto;    
+    /* box-shadow: 4px 4px 3px 3px var(--background-color);
+    border-radius: 5%; */
+}
+
+
+.producto{
+    font-size: 1.2rem;
+    color: rgb(0, 132, 255);
+    margin-top: 20px;
+}
+
+.descripcion{
+    font-size: 1.1rem;
+    color: gray;
+    max-width: 20vw;
+    display: inline-block;
+    text-align: center;
+    height: 80px;
+    margin-top: 5px;    
+}
+
+.precio{
+    font-size: 1.3rem;
+}
+
+
+#boton-carrito{
+    border-radius: 5px;
+    width: 12vw;
+    height: 5vh;
+}
+
+
+
+
+
+
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+
+@media (max-width: 768px){
+    .titulo-categorias{
+        text-align: left;
+        font-family: sans-serif;
+        margin: 20px;
+        font-size: 1.5rem;
+    }
+
+    .contenedor-categorias{
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        grid-template-columns:repeat(2,auto);
+        height: auto;
+    }
+
+    #img-categorias{
+        width: 15vw;
+        height: 8vh;
+        margin: auto;
+    }
+
+
+    .titulo-hogar{
+        text-align: left;
+        font-family: sans-serif;
+        margin: 20px;
+        font-size: 1.5rem;
+    }
+
+    .contenedor-hogar{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(6,auto);
+        gap: 10px;
+        padding: 10px;
+        
+    }
+
+    .hogar-items{
+        
+    }
+
+    .producto{
+        font-size: 1.5rem;
+    }
+
+    .descripcion{
+        font-size: 1.4rem;
+        color: gray;
+        max-width: 35vw;
+        display: inline-block;
+        text-align: center;
+        
+    }
+    
+
+    #boton-carrito{
+        width: 30vw;    
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 468px       */
+/* ********************************** */
+
+@media (max-width: 468px){
+
+
+
+
+
+
+
+
+
+}

@@ -16,9 +16,9 @@
 
 .titulo-categorias{
     text-align: left;
-    font-family: sans-serif;
-    margin: 30px;
-    font-size: 2rem;
+    font-style: italic;
+    margin: 20px;
+    font-size: 1rem;
 }
 
 .contenedor-categorias{
@@ -66,9 +66,15 @@
 
 .titulo-destacados{
     text-align: left;
-    font-family: sans-serif;
-    margin: 30px;
-    font-size: 20px;
+    font-style: italic;
+    margin: 20px;
+    font-size: 1rem;
+
+}
+
+.img-destacados {
+    height: 30vh;
+    width: auto;
 }
 
 .img-destacados:hover{
@@ -83,41 +89,47 @@
     grid-template-columns: repeat(4,auto);
     gap: 10px;
     padding: 10px;
-    justify-content: space-around;
+    justify-content: space-around; 
+       
     
 }
 
+.destacados-items{
+    
+    border-radius: 3%;
+    text-align: center;
+    height: 60vh;
+    width: auto;    
+    /* box-shadow: 4px 4px 3px 3px var(--background-color);
+    border-radius: 5%; */
+}
+
+
 .producto{
-    font-size: 2rem;
-    color: rgb(0, 132, 255)
+    font-size: 1.2rem;
+    color: rgb(0, 132, 255);
+    margin-top: 20px;
 }
 
 .descripcion{
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     color: gray;
     max-width: 20vw;
     display: inline-block;
     text-align: center;
-    
+    height: 80px;
+    margin-top: 5px;    
 }
 
 .precio{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
-
 
 
 #boton-carrito{
     border-radius: 5px;
     width: 12vw;
     height: 5vh;
-    background-color: ;
-}
-
-.destacados-items{
-    border: 5% solid black;
-    border-radius: 3%;
-    text-align: center;
 }
 
 
@@ -132,7 +144,7 @@
         text-align: left;
         font-family: sans-serif;
         margin: 20px;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .contenedor-categorias{
@@ -143,8 +155,9 @@
     }
 
     #img-categorias{
-        width: 20vw;
-        height: 15vh;
+        width: 15vw;
+        height: 8vh;
+        margin: auto;
     }
 
 
@@ -152,7 +165,7 @@
         text-align: left;
         font-family: sans-serif;
         margin: 20px;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .contenedor-destacados{
@@ -163,13 +176,18 @@
         gap: 10px;
         padding: 10px;
         
+    }
 
-    
+    .destacados-items{
         
     }
 
+    .producto{
+        font-size: 1.5rem;
+    }
+
     .descripcion{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         color: gray;
         max-width: 35vw;
         display: inline-block;
@@ -179,7 +197,7 @@
     
 
     #boton-carrito{
-        width: 30vw;
+        width: 30vw;    
     }
 
 
