@@ -14,7 +14,7 @@ var headerContent = `
 
     <div class="container-logo">  
       <img src="statics/img/traced-logo_fondo_bco (1).ico" alt="" id="logo-img">
-      <h1 class="logo"><a href="/">ComprasOnline.com</a></h1>
+      <h1 class="logo"><a href="/">AverQueHay?</a></h1>
     </div>
 
     <div class="container-user">
@@ -40,7 +40,7 @@ var headerContent = `
     </ul>
 
     <form class="search-form">
-      <input type="search" placeholder="Buscar..." />
+      <input type="search" placeholder="Buscar..." >
       <button class="btn-search">
         <i class="fa-solid fa-magnifying-glass"></i> <!--Icono busqueda-->
       </button>
@@ -112,7 +112,7 @@ var footerContent = `
   
   <div class="copyright">
     <p>
-      ComprasOnline.com. Todos los derechos reservados &copy; 2024
+      AverQueHay?. Todos los derechos reservados &copy; 2024
     </p>
 
     <img src="statics/img/payment.png" alt="Pagos" id="pagos">

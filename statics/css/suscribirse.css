@@ -54,8 +54,12 @@ html {
     border-radius: 8px;
 }
 
+input{
+    padding: 10px;
+}
+
 fieldset {
-    width: 40vw;
+    width: 25vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -65,4 +69,19 @@ fieldset {
 
 #genero p {
     padding: 14px;
+}
+
+#comentarios{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+
+}
+
+#comentario{
+    padding: 5px;
+}
+
+.titulo{
+    font-size: 1.5em;
 }
