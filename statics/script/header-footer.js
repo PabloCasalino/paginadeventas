@@ -35,7 +35,7 @@ var headerContent = `
     <ul class="menu">
       <li><a href="/">Inicio</a></li>
       <li><a href="#">Acerca de</a></li>
-       <li><a href="./suscribirse.html">Registro</a></li>
+       <li><a href="../../templates/suscribirse.html">Registro</a></li>
       <li><a href="#">Más</a></li>
     </ul>
 

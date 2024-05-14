@@ -15,7 +15,7 @@
 /* Seccion categorias */
 
 .titulo-categorias{
-    text-align: center;
+    text-align: left;
     font-style: italic;
     margin: 20px;
     font-size: 1rem;
@@ -60,11 +60,9 @@
     color: black;
 }
 
+/* Seccion hogar */
 
-
-/* Seccion destacados */
-
-.titulo-destacados{
+.titulo-hogar{
     text-align: left;
     font-style: italic;
     margin: 20px;
@@ -72,18 +70,13 @@
 
 }
 
-.img-destacados {
-    height: 30vh;
-    width: auto;
-}
-
-.img-destacados:hover{
+.img-hogar:hover{
     opacity: 70%;
     -webkit-transform:scale(1.2);transform:scale(1.2);
     overflow: hidden;
 }
 
-.contenedor-destacados{
+.contenedor-hogar{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4,auto);
@@ -94,7 +87,7 @@
     
 }
 
-.destacados-items{
+.hogar-items{
     
     border-radius: 3%;
     text-align: center;
@@ -135,6 +128,9 @@
 
 
 
+
+
+
 /* ********************************** */
 /*       MEDIA QUERIES -- 768px       */
 /* ********************************** */
@@ -161,14 +157,14 @@
     }
 
 
-    .titulo-destacados{
+    .titulo-hogar{
         text-align: left;
         font-family: sans-serif;
         margin: 20px;
         font-size: 1.5rem;
     }
 
-    .contenedor-destacados{
+    .contenedor-hogar{
         display: grid;
         width: 100%;
         grid-template-columns: repeat(1,auto);
@@ -178,7 +174,7 @@
         
     }
 
-    .destacados-items{
+    .hogar-items{
         
     }
 

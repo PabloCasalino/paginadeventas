@@ -57,26 +57,6 @@ h1 {
     border-radius: 8px;
 }
 
-@media screen and (max-width:425px) {
-    .personales {
-        padding: 18px;
-        margin: 3px;
-        width: 300px;
-        height: 30px;
-        border-radius: 8px;
-    }
-}
-
-@media screen and (max-width:375px) {
-    .personales {
-        padding: 18px;
-        margin: 3px;
-        width: 270px;
-        height: 30px;
-        border-radius: 8px;
-    }
-}
-
 input {
     padding: 10px;
 }
@@ -125,4 +105,25 @@ fieldset {
     display: flex;
     justify-content: space-evenly;
     /* gap: 20px; */
+}
+
+    /* Media Querys */
+@media screen and (max-width:425px) {
+    .personales {
+        padding: 18px;
+        margin: 3px;
+        width: 300px;
+        height: 30px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .personales {
+        padding: 18px;
+        margin: 3px;
+        width: 270px;
+        height: 30px;
+        border-radius: 8px;
+    }
 }
