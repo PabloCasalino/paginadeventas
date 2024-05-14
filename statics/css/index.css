@@ -61,6 +61,12 @@
 }
 
 
+#separacion{
+    width: auto;
+    height: 20px;
+    background-color: var(--primary-color);
+}
+
 
 /* Seccion destacados */
 
@@ -89,19 +95,16 @@
     grid-template-columns: repeat(4,auto);
     gap: 10px;
     padding: 10px;
-    justify-content: space-around; 
-       
-    
+    justify-content: space-around;    
 }
 
-.destacados-items{
-    
+.destacados-items{   
     border-radius: 3%;
     text-align: center;
     height: 60vh;
     width: auto;    
-    /* box-shadow: 4px 4px 3px 3px var(--background-color);
-    border-radius: 5%; */
+    box-shadow: 4px 4px 3px 3px var(--background-color);
+    border-radius: 5%;
 }
 
 

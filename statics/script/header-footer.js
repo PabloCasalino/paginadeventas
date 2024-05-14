@@ -13,8 +13,8 @@ var headerContent = `
     </div>
 
     <div class="container-logo">  
-      <img src="statics/img/traced-logo_fondo_bco (1).ico" alt="" id="logo-img">
-      <h1 class="logo"><a href="/">A ver Que Hay ...?</a></h1>
+      <img src="../../statics/img/traced-logo_fondo_bco (1).ico" alt="" id="logo-img">
+      <h1 class="logo"><a href="../../index.html">A ver Que Hay ...?</a></h1>
     </div>
 
     <div class="container-user">
