@@ -10,7 +10,7 @@
 }
 
 #logo {
-    width: 18em;
+    width: 50em;
 }
 
 h1 {
@@ -35,7 +35,7 @@ h1 {
 
 #logo-container img,
 #logo-container h1 {
-    margin-top: 50%;
+    margin-top: 20%;
 }
 
 .datos-personales,
@@ -70,10 +70,16 @@ fieldset {
     padding: 15px 0px 15px 0px;
 }
 
-#genero p {
+.subtitulo {
     text-align: start;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     padding: 7px;
+    font-size: 2em;
+}
+
+#selector{
+    width: 100%; 
+    max-width: 100%; 
 }
 
 #comentarios {
@@ -87,8 +93,8 @@ fieldset {
     max-width: 100%; 
 }
 
-#parr {
-    color:#fff
+#genero input[type="radio"] {
+    transform : scale(1.5);
 }
 
 .titulo {
@@ -104,6 +110,7 @@ fieldset {
 .btn-container{
     display: flex;
     justify-content: space-evenly;
+    padding: 20px;
     /* gap: 20px; */
 }
 
@@ -125,5 +132,12 @@ fieldset {
         width: 270px;
         height: 30px;
         border-radius: 8px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    #logo{
+        width: 40em;
     }
 }

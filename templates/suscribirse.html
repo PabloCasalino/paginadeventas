@@ -17,9 +17,10 @@
   <section id="formulario">
     <div id="logo-container">
 
-      <img id="logo" src="../statics/img/logo_formulario.png" alt="formulario_logo">
-
       <h1>Formulario de aceptación</h1>
+      <img id="logo"
+        src="../statics/img/empresario-sosteniendo-lapiz-gran-lista-verificacion-completa-marcas-graduacion_1150-35019.avif"
+        alt="formulario_logo">
 
     </div>
     <div id="container">
@@ -59,15 +60,28 @@
             <label class="datos-personales" for="telefono">Télefono:</label>
             <input class="personales" type="tel" name="telefono" id="telefono" required
               placeholder="  Ingrese su teléfono aquí...">
-              <div id="resultadoTelefono"></div>
+            <div id="resultadoTelefono"></div>
           </div>
           <div>
             <label class="datos-personales" for="nacimiento">Fecha de Nacimiento</label>
             <input class="personales" type="date" name="nombre" id="nacimiento" required>
           </div>
 
+          <div>
+            <p class="subtitulo">Indique cómo nos ha conocido</p>
+            <select name="select" id="selector">
+
+              <option value="conocido">Familiar</option>
+              <option value="redes sociales">Redes Sociales</option>
+              <option value="television">Televisión</option>
+              <option value="radio">Radio</option>
+            </select>
+          </div>
+
+
+
           <div id="genero">
-            <p> Género </p>
+            <p class="subtitulo"> Género </p>
             <input type="radio" name="genero" id="m" required>
             <label for="m">Masculino</label>
             <input type="radio" name="genero" id="f" required>
@@ -82,11 +96,11 @@
           <textarea name="comentario" id="comentario" cols="" rows="" maxlength="220"></textarea>
         </div>
         <div class="btn-container">
-                  <input class="btn" type="submit" value="Enviar" id="submitButton">
-        <input class="btn" type="reset" value="Borrar">
-      </div>
+          <input class="btn" type="submit" value="Enviar" id="submitButton">
+          <input class="btn" type="reset" value="Borrar">
+        </div>
     </div>
-      </form>
+    </form>
 
 
   </section>
