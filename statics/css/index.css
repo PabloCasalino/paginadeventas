@@ -163,6 +163,11 @@
         margin: auto;
     }
 
+    .img-destacados {
+        height: 25vh;
+        width: auto;
+    }
+
 
     .titulo-destacados{
         text-align: left;
@@ -199,36 +204,30 @@
         width: 30vw;    
     }
 
-
-
-
-
-
-
-
 }
 
 
-
-
-
-
-
-
-
-
 /* ********************************** */
-/*       MEDIA QUERIES -- 468px       */
+/*       MEDIA QUERIES -- 425px       */
 /* ********************************** */
 
 @media (max-width: 468px){
 
 
+    .img-destacados {
+        height: 26vh;
+        width: auto;
+    }
 
+}
 
+/* ********************************** */
+/*       MEDIA QUERIES -- 375px       */
+/* ********************************** */
 
-
-
-
-
+@media screen and (max-width: 375) {
+    .img-destacados {
+        height: 18vh;
+        width: auto;
+       }
 }

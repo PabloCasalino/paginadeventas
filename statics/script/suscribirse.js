@@ -41,7 +41,7 @@ document.getElementById("form").addEventListener('change', function (event) {
     resultadoTelefono.textContent = '';
   }
 
-  submitButton.disabled = !(nombreValido && apellidoValido && telefono.length < 10);
+  submitButton.disabled = !(nombreValido && apellidoValido && !telefono.length < 10);
 });
 
 
