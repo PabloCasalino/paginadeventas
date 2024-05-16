@@ -122,3 +122,11 @@ var footerContent = `
 `
 document.body.insertAdjacentHTML("afterend",footerContent);  
 
+const hamburger = document.querySelector(".fa-bars");
+const navMenu = document.querySelector(".menu");
+
+hamburger.addEventListener("click", () => 
+{
+    navMenu.classList.toggle("active")
+    console.log('Funciona');
+});
