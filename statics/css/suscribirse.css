@@ -2,60 +2,142 @@
     margin: 0;
     padding: 0;
 }
-:root{
---color-input-border:black;
---color-background-form: rgb(57, 88, 148);
-}
 
-#formulario {
-    margin: 5%;
-    padding: 5%;
-    background-color: var(--color-background-form);
+:root {
+    --primary-color: #4353df;
+    --background-color: #afbed6;
+    --dark-color: #151515;
 }
 
 #logo {
-    width: 70px;
-    height: 70px;
-    margin-left: 50%;
-    margin-right: 50%;
+    width: 50em;
 }
 
-#form {
-    text-align: center;
+h1 {
+    font-family: 'Poppins';
+    font-size: 2.5em;
 }
 
-#form-title {
-    text-align: center;
-    margin-left: 10vh;
-   
-}
-
-#datos-personales {
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
-    padding: 10px
-}
-
-#conocimiento {
+#formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 20px;
+    background: linear-gradient(var(--background-color), var(--primary-color));
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#logo-container img,
+#logo-container h1 {
+    margin-top: 20%;
+}
+
+.datos-personales,
+#genero {
+    display: block;
+    font-family: 'Poppins';
+    font-size: 1.5em;
+}
+
+#container {
+    border-radius: 8px;
 }
 
 .personales {
-   margin: 5px;
-   border: 1px solid var(--color-input-border);
-   height: 20px;
-   border-radius: 10px;
+    padding: 18px;
+    margin: 3px;
+    width: 350px;
+    height: 30px;
+    border-radius: 8px;
 }
 
-#estudios{
-    margin: 10px;
+input {
+    padding: 10px;
+}
+
+fieldset {
+    width: 25vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.subtitulo {
+    text-align: start;
+    /* text-decoration: underline; */
+    padding: 7px;
+    font-size: 2em;
+}
+
+#selector{
+    width: 100%; 
+    max-width: 100%; 
 }
 
 #comentarios {
-    margin:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#parr {
-    margin:20px;
+#comentario {
+    width: 100%; 
+    max-width: 100%; 
+}
+
+#genero input[type="radio"] {
+    transform : scale(1.5);
+}
+
+.titulo {
+    font-size: 1.5em;
+}
+
+.btn{
+    border-radius: 5px;
+    justify-content:center ;
+    width: 120px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    /* gap: 20px; */
+}
+
+    /* Media Querys */
+@media screen and (max-width:425px) {
+    .personales {
+        padding: 18px;
+        margin: 3px;
+        width: 300px;
+        height: 30px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .personales {
+        padding: 18px;
+        margin: 3px;
+        width: 270px;
+        height: 30px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    #logo{
+        width: 40em;
+    }
 }

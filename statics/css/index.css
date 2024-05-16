@@ -15,7 +15,7 @@
 /* Seccion categorias */
 
 .titulo-categorias{
-    text-align: left;
+    text-align: center;
     font-style: italic;
     margin: 20px;
     font-size: 1rem;
@@ -61,6 +61,12 @@
 }
 
 
+#separacion{
+    width: auto;
+    height: 20px;
+    background-color: var(--primary-color);
+}
+
 
 /* Seccion destacados */
 
@@ -72,36 +78,33 @@
 
 }
 
-.img-destacados {
+.img-hogar {
     height: 30vh;
     width: auto;
 }
 
-.img-destacados:hover{
+.img-hogar:hover{
     opacity: 70%;
     -webkit-transform:scale(1.2);transform:scale(1.2);
     overflow: hidden;
 }
 
-.contenedor-destacados{
+.contenedor-hogar{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4,auto);
     gap: 10px;
     padding: 10px;
-    justify-content: space-around; 
-       
-    
+    justify-content: space-around;    
 }
 
-.destacados-items{
-    
+.hogar-items{   
     border-radius: 3%;
     text-align: center;
     height: 60vh;
     width: auto;    
-    /* box-shadow: 4px 4px 3px 3px var(--background-color);
-    border-radius: 5%; */
+    box-shadow: 4px 4px 3px 3px var(--background-color);
+    border-radius: 5%;
 }
 
 
@@ -122,11 +125,11 @@
 }
 
 .precio{
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 
-#boton-carrito{
+.boton-carrito{
     border-radius: 5px;
     width: 12vw;
     height: 5vh;
@@ -160,6 +163,11 @@
         margin: auto;
     }
 
+    .img-destacados {
+        height: 25vh;
+        width: auto;
+    }
+
 
     .titulo-destacados{
         text-align: left;
@@ -178,11 +186,7 @@
         
     }
 
-    .destacados-items{
-        
-    }
-
-    .producto{
+      .producto{
         font-size: 1.5rem;
     }
 
@@ -200,36 +204,30 @@
         width: 30vw;    
     }
 
-
-
-
-
-
-
-
 }
 
 
-
-
-
-
-
-
-
-
 /* ********************************** */
-/*       MEDIA QUERIES -- 468px       */
+/*       MEDIA QUERIES -- 425px       */
 /* ********************************** */
 
 @media (max-width: 468px){
 
 
+    .img-destacados {
+        height: 26vh;
+        width: auto;
+    }
 
+}
 
+/* ********************************** */
+/*       MEDIA QUERIES -- 375px       */
+/* ********************************** */
 
-
-
-
-
+@media screen and (max-width: 375) {
+    .img-destacados {
+        height: 18vh;
+        width: auto;
+       }
 }
