@@ -13,19 +13,6 @@ const hogarproductos = [
   },
 
   {
-      id:"accesorios-02",
-      producto:"BANDOLERA HEAD",
-      imagen: "../statics/img/Acc/billetera-tarjetero.jpg",
-      descripcion: "Material: microfibra. Bolsillo frontal. Medidas: 16x16x5cm. Color: NEGRO/AZUL",
-      categoria: {
-          nombre: "Accesorio",
-          id:"Accesorios"
-      },
-      precio: 12000
-
-  },
-
-  {
       id:"accesorios-03",
       producto:"BANDOLERA PAÑO BLAQUE",
       imagen: "../statics/img/Acc/BANDOLERA PAÑO BLAQUE.jpeg",

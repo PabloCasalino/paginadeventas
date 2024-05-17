@@ -1,235 +1,253 @@
 const hogarproductos = [
     {
-        id:"hogar-01",
-        producto:"ALMOHADONES INFANTILES",
-        imagen: "../statics/img/Hogar/almohadones-infantiles.jpg",
-        descripcion: "Para usar en casa o para llevar a todos lados, Tamaño 40x40cm, Material de excelente calidad.",
+        id:"fitness-01",
+        producto:"ARO DE BASQUET N 7 CON RED Y GANCHOS",
+        imagen: "../statics/img/Fitness/ARO DE BASQUET N 7 CON RED Y GANCHOS.jpeg",
+        descripcion: "Aro metálico, medida profesional. Su tamaño Nº7 lo hace apto tanto para interiores como exteriores.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
         },
-        precio: 4200
+        precio: 18999
 
     },
 
     {
-        id:"hogar-02",
-        producto:"BATIDOR ESPUMADOR",
-        imagen: "../statics/img/Hogar/batidor.jpg",
-        descripcion: "Material: Plástico reforzado Para hacer el mejor capuchino, omelette, milk shake, etc.",
+        id:"fitness-02",
+        producto:"BANDAS DE RESISTENCIA ANCHAS X2",
+        imagen: "../statics/img/Fitness/BANDAS DE RESISTENCIA ANCHAS X2.png",
+        descripcion: "Material: Elástico reforzado irrompible.Medidas: 30 cm x 8 cm.kit por 2 bandas anchas (media y alta).",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
+        },
+        precio: 6999
+
+    },
+
+   
+
+    {
+        id:"fitness-03",
+        producto:"BOLSO WILSON FIT",
+        imagen: "../statics/img/Fitness/BOLSO WILSON FIT.jpg",
+        descripcion: "Medidas: 43.00 cm alto x 34.00 cm ancho x 14.00 cm. Color: Rosa, Lila y Negro.",
+        categoria: {
+            nombre: "Fitness",
+            id:"fit"
+        },
+        precio: 21999
+
+    },
+
+    {
+        id:"fitness-04",
+        producto:"BOTELLA CANTIMPLORA LISA",
+        imagen: "../statics/img/Fitness/BOTELLA CANTIMPLORA LISA.jpeg",
+        descripcion: "La cantimplora es ideal para senderismo o incluso viajes largos. Su matriz está hecha de plástico PP, para ser ligero y práctico de llevar. Capacidad: 1000 ml.",
+        categoria: {
+            nombre: "Fitness",
+            id:"fit"
         },
         precio: 2999
 
     },
 
     {
-        id:"hogar-03",
-        producto:"BIDON TERMICO 2L CON PICO VERTEDOR",
-        imagen: "../statics/img/Hogar/bidon.jpg",
-        descripcion: "Único con tapa para grande para poner hielo y limpiar.",
+        id:"fitness-05",
+        producto:"BOTELLA DEPORTIVA",
+        imagen: "../statics/img/Fitness/BOTELLA DEPORTIVA.jpeg",
+        descripcion: "Botella deportiva de 1 litro, apertura por botón automático con seguro. Material PP, de grado alimenticio, Sin olor. ",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
+        },
+        precio: 10999
+
+    },
+
+    {
+        id:"fitness-06",
+        producto:"BOTELLA EVERLAST",
+        imagen: "../statics/img/Fitness/BOTELLA EVERLAST.jpg",
+        descripcion: "Correa de transporte, botón de apertura y cierre, tapa interna de silicona. Material: plástico. Capacidad: 600ml. Color: ROSA CELESTE.",
+        categoria: {
+            nombre: "Fitness",
+            id:"fit"
+        },
+        precio: 19999
+
+    },
+
+    {
+        id:"fitness-07",
+        producto:"BRAZALETE PARA CORRER UNIVERSAL",
+        imagen: "../statics/img/Fitness/BRAZALETE PARA CORRER UNIVERSAL.jpg",
+        descripcion: "Porta celular hasta pantallas de 5.5''. Medida: 16.5x9 cm. Compartimiento de llave. Plástico transparente para uso táctil del celular.",
+        categoria: {
+            nombre: "Fitness",
+            id:"fit"
+        },
+        precio: 2999
+
+    },
+
+    {
+        id:"fitness-08",
+        producto:"COLCHONETA 100X40X4 CM",
+        imagen: "../statics/img/Fitness/COLCHONETA-100x40x4cm.jpg",
+        descripcion: "Colores: Rojo - Negro - Azul- Fucsia. De alta densidad, 4 cm x 40 cm x 100 cm, recubiertas con tela %100 CORDURA, fácil de limpiar o lavar con cierre reforzado.",
+        categoria: {
+            nombre: "Fitness",
+            id:"fit"
+        },
+        precio: 19999
+
+    },
+
+    {
+        id:"fitness-09",
+        producto:"COLCHONETA PLEGABLE",
+        imagen: "../statics/img/Fitness/COLCHONETA PLEGABLE.jpg",
+        descripcion: "Alta densidad, excelente calidad, con correa para trasladar. Medidas: 50x1x3cm.",
+        categoria: {
+            nombre: "Fitness",
+            id:"fit"
+        },
+        precio: 21999
+
+    },
+
+    {
+        id:"fitness-10",
+        producto:"CONOS TORTUGA X 10 UNID",
+        imagen: "../statics/img/Fitness/CONOS TORTUGA X 10 UNID.png",
+        descripcion: "Colores: Rojo - Verde - Amarillo - Naranja - Azul - Surtido. Medidas: 18,5 cm (Diámetro). Material: Polipropileno de baja densidad.",
+        categoria: {
+            nombre: "Fitness",
+            id:"fit"
         },
         precio: 4999
 
     },
 
     {
-        id:"hogar-04",
-        producto:"BOMBILLA INOXIDABLE RESORTE REGULABLE",
-        imagen: "../statics/img/Hogar/bombilla.jpg",
-        descripcion: "Bombilla inoxidable, no se tapa, no se oxida, fácil de limpiar. Resorte inoxidable regulable.",
+        id:"fitness-11",
+        producto:"DISCO BODY PUMP 5KG VACIO",
+        imagen: "../statics/img/Fitness/DISCO BODY PUMP 5KG VACIO.jpeg",
+        descripcion: "Disco con peso grabado, piedra, arena y metal para llegar al peso indicado. Medidas: 5,5 cm de alto x 24 cm de diametro aprox.Línea plástico super resistente.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
         },
-        precio: 3299
+        precio: 3999
 
-    }
-   
-    ,
+    },
 
     {
-        id:"hogar-05",
-        producto:"BOMBILLA PERITA COCO PLANA ANGOSTA X 5",
-        imagen: "../statics/img/Hogar/BOMBILLA PERITA COCO PLANA ANGOSTA X 5.jpeg",
-        descripcion: "Bombillas de Acero inoxidable planas. Metamate premium. Largo: 17 cm Color: Único.",
+        id:"fitness-12",
+        producto:"ESCALERA DE COORDINACIÓN 10 ESCALONES",
+        imagen: "../statics/img/Fitness/ESCALERA DE COORDINACIÓN 10 ESCALONES.jpg",
+        descripcion: "Ideal para marcar el terreno y realizar trabajos coordinativos, Varilla flexible, ayuda a la coordinación y psicomotricidad. 10 escalones, 5 mts de largo X 45,5 cm de ancho. ",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
         },
-        precio: 9999
+        precio: 7999
 
-    }
-
-    ,
+    },
 
     {
-        id:"hogar-06",
-        producto:"BOTELLA SPORT 500 ML",
-        imagen: "../statics/img/Hogar/botella_sport.jpg",
-        descripcion: "Fabricada en Acero inoxidable Doble Capa de Altísima calidad.",
+        id:"fitness-13",
+        producto:"INFLADOR DE ALUMINIO MULTIUSO",
+        imagen: "../statics/img/Fitness/INFLADOR DE ALUMINIO MULTIUSO.jpg",
+        descripcion: "Inflador de aluminio, con mango rebatible tipo T y pie plegables 90 grados. INCLUYE: Pico auto, pico bici común, pico para inflables y pico aguja para pelotas.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 16999
-
-    }
-
-    ,
-
-    {
-        id:"hogar-07",
-        producto:"CALCULADORA",
-        imagen: "../statics/img/Hogar/calculadora.jpg",
-        descripcion: "Calculadoara con Visor LCD de 12 dígitos grandes, cálculo rápido de Costo/ Margen/ Precio de Venta, selector de Redondeo y de Punto decimal, Cálculo de Impuesto con tasa programable, 4 memorias de cálculo.",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
         },
         precio: 6999
 
-    }
-
-    ,
+    },
 
     {
-        id:"hogar-08",
-        producto:"DELANTAL MANOPLA Y AGARRADERA ",
-        imagen: "../statics/img/Hogar/delantal.jpeg",
-        descripcion: "MEDIDAS: DELANTAL DE 75CM X 50CM, MANOPLA 26CM APROX Y AGARRADERA DE 18CM APROX",
+        id:"fitness-14",
+        producto:"KIT LUCES DE BICICLETA",
+        imagen: "../statics/img/Fitness/KIT LUCES DE BICICLETA.png",
+        descripcion: "Luz delantera y trasera para bicicleta con dos modos de funcionamiento, fijas e intermitentes, pilas CR-2032 (tipo moneda) Incluidas, color: luz blanca y roja, material: Silicona.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
         },
-        precio: 14999
+        precio: 3999
 
-    }   
-
-    ,
+    },
 
     {
-        id:"hogar-09",
-        producto:"GUANTES DE SILICONA",
-        imagen: "../statics/img/Hogar/guantes.jpeg",
-        descripcion: "Gran elasticidad y resistencia al calor: -60 °C a 230 °C. Talle: Universal. Medidas: 31,5cm de largo X 13cm de ancho. Peso: 170 g (el par). COLOR: AZUL, ROSA Y VERDE.  ",
+        id:"fitness-15",
+        producto:"LUZ LED BICICLETA DELANTERO RECARGABLE USB",
+        imagen: "../statics/img/Fitness/LUZ LED BICICLETA DELANTERO RECARGABLE USB.jpg",
+        descripcion: "Resistente a salpicaduras. Botón situado en la parte superior de la luz para un fácil acceso. Tiene 3 modos de luz: Luz Alta, Luz Baja e Intermitente. Color: Negro.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
         },
         precio: 8999
 
-    }   
-
-    ,
+    },
 
     {
-        id:"hogar-10",
-        producto:"JARRA FAMILIAR 5 LITROS 4 VASOS",
-        imagen: "../statics/img/Hogar/jarra familiar.jpg",
-        descripcion: "Linda y cómoda jarra familiar con 4 vasos plásticos, libres de BPA. Cuadrada, de 25 cm de alto x 16,5 cm de ancho.",
+        id:"fitness-16",
+        producto:"MOCHILA CAMPING ALPINE SKATE",
+        imagen: "../statics/img/Fitness/MOCHILA CAMPING ALPINE SKATE.jpg",
+        descripcion: "Medidas: 54x35x16cm. Capacidad de 45+5L, espalda y tiras acolchonadas con tela mesh, tiras regulables.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
+        },
+        precio: 67999
+
+    },
+
+    {
+        id:"fitness-17",
+        producto:"RIÑONERA DEPORTIVA ALPINE SKATE",
+        imagen: "../statics/img/Fitness/RIÑONERA DEPORTIVA ALPINE SKATE.jpg",
+        descripcion: "Incluye porta botellas. Tela mesh acolchonada para mayor comodidad COLOR: azul y negro.",
+        categoria: {
+            nombre: "Fitness",
+            id:"fit"
+        },
+        precio: 16999
+
+    },
+
+    {
+        id:"fitness-18",
+        producto:"RIÑONERA RUNNING LSYD DOBLE CIERRE",
+        imagen: "../statics/img/Fitness/RIÑONERA RUNNING LSYD DOBLE CIERRE.jpg",
+        descripcion: "Cierre doble, ranura para auriculares, hebilla regulable, resistente al agua. Material: neoprene. Medidas: 6 cm alto x 30 cm ancho. Color: NEGRO FUCSIA AZUL NEON.",
+        categoria: {
+            nombre: "Fitness",
+            id:"fit"
         },
         precio: 7999
 
-    }   
-
-    ,
+    },
 
     {
-        id:"hogar-11",
-        producto:"JARRO MATE LISTO ALUMINIO",
-        imagen: "../statics/img/Hogar/JARRO MATE LISTO ALUMINIO.jpeg",
-        descripcion: "Características: Mate autocebante de plástico polipropileno, con base aluminio, cuenta con bombilla de bronce niquelado incorporada. Colores: Verde, azul, rojo, rosa y lila",
+        id:"fitness-19",
+        producto:"TOPES MARIPOSA 28MM X 2 UNIDADES",
+        imagen: "../statics/img/Fitness/TOPES MARIPOSA 25 MM X 2 UNIDADES.png",
+        descripcion: "Topes de hierro simil cromado Para mancuernas y barras, resistentes al peso.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
         },
-        precio: 7999
+        precio: 2999
 
-    }   
+    }
 
-    ,
-
-    {
-        id:"hogar-12",
-        producto:"JUEGO DE SABANAS BORDADAS SUPER KING",
-        imagen: "../statics/img/Hogar/sabanas.jpg",
-        descripcion: "BORDADO SOLO EN LA FUNDA DE LA ALMOHADA Juego de sabanas 100% ALGODON de 4 piezas, Calidad premium.",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 48999
-
-    }   
-
-    ,
-
-    {
-        id:"hogar-13",
-        producto:"JUEGO DE SABANAS ESTAMPADAS KING",
-        imagen: "../statics/img/Hogar/JUEGO DE SABANAS ESTAMPADAS KING.jpg",
-        descripcion: "Juego de sabanas de 4 piezas, Calidad premium, Atemporal con atractivo elegante. Composición 70% algodón y 30% microfibra.",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 38999
-
-    }   
-
-    ,
-
-    {
-        id:"hogar-14",
-        producto:"LÁMPARA LED MATAMOSQUITOS",
-        imagen: "../statics/img/Hogar/LAMPARA-led.jpg",
-        descripcion: "Lámpara Foco Led BAJO CONSUMO y Mata Moscas Mosquitos Insectos, practica y fácil de instalar,",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 7999
-
-    }   
-
-    ,
-
-    {
-        id:"hogar-15",
-        producto:"MATE TERMICO CON BOMBILLA 236 ML",
-        imagen: "../statics/img/Hogar/MATE TERMICO CON BOMBILLA 236 ML.jpg",
-        descripcion: "Mate doble pared de acero Inoxidable. Bombilla de acero inoxidable. Apto Frio calor. Ideal para Terere y Mate. ",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 20999
-
-    }   
-
-    ,
-
-    {
-        id:"hogar-16",
-        producto:"TERMO MEDIA MANIJA 1 LITRO",
-        imagen: "../statics/img/Hogar/TERMO MEDIA MANIJA.jpg",
-        descripcion: "Modelo ergonómico, ligero e irrompible. Tapa resistente con rosca antiderrame: para usar como vaso, taza o mate. 100% hermético. Conservación de líquidos hasta por 12hs aproximadamente. ",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 20999
-
-    }   
 
 ];
 
