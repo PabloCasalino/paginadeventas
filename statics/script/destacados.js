@@ -1,162 +1,56 @@
 const hogarproductos = [
     {
-        id:"hogar-01",
-        producto:"ALMOHADONES INFANTILES",
-        imagen: "../statics/img/Hogar/almohadones-infantiles.jpg",
-        descripcion: "Para usar en casa o para llevar a todos lados, Tamaño 40x40cm, Material de excelente calidad.",
+        id:"indumentaria-05",
+        producto:"CAMISETA TERMICA HOMBRE AZUL",
+        imagen: "../statics/img/Indumentaria/CAMISETA TERMICA HOMBRE AZUL.png",
+        descripcion: "Camiseta Térmica de Hombre con Cuello Redondo. Frizada por dentro, super abrigada! Poliester con elastano.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Indumentaria",
+            id:"ind"
         },
-        precio: 4200
+        precio: 14299
 
     },
 
     {
-        id:"hogar-02",
-        producto:"BATIDOR ESPUMADOR",
-        imagen: "../statics/img/Hogar/batidor.jpg",
-        descripcion: "Material: Plástico reforzado Para hacer el mejor capuchino, omelette, milk shake, etc.",
+        id:"accesorios-04",
+        producto:"BILLETERA EVERLAST",
+        imagen: "../statics/img/Acc/billetera-everlast.jpg",
+        descripcion: "Material: ecocuero, incluye packaging. Medidas: 9x13x2.5cm. Colores: NEGRO SUELA.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Accesorio",
+            id:"Accesorios"
         },
-        precio: 2999
-
+        precio: 23999   
+  
     },
 
     {
-        id:"hogar-03",
-        producto:"BIDON TERMICO 2L CON PICO VERTEDOR",
-        imagen: "../statics/img/Hogar/bidon.jpg",
-        descripcion: "Único con tapa para grande para poner hielo y limpiar.",
+        id:"accesorios-22",
+        producto:"MOCHILA LISA",
+        imagen: "../statics/img/Acc/mochila-lisa.jpg",
+        descripcion: "Mochila Urbana. 1 Bolsillo utilitario frontal - Tiras ajustables para colgar en la espalda. Medidas: 44cm x 33cm x 21cm. (Alto x Ancho x Prof). Capacidad: 17 litros. Material: 100% Poliéster.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Accesorio",
+            id:"Accesorios"
         },
-        precio: 4999
-
+        precio: 15999
+  
     },
 
     {
-        id:"hogar-04",
-        producto:"BOMBILLA INOXIDABLE RESORTE REGULABLE",
-        imagen: "../statics/img/Hogar/bombilla.jpg",
-        descripcion: "Bombilla inoxidable, no se tapa, no se oxida, fácil de limpiar. Resorte inoxidable regulable.",
+        id:"fitness-05",
+        producto:"BOTELLA DEPORTIVA",
+        imagen: "../statics/img/Fitness/BOTELLA DEPORTIVA.jpeg",
+        descripcion: "Botella deportiva de 1 litro, apertura por botón automático con seguro. Material PP, de grado alimenticio, Sin olor. ",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
         },
-        precio: 3299
+        precio: 10999
 
-    }
-   
-    ,
+    },
 
-    {
-        id:"hogar-05",
-        producto:"BOMBILLA PERITA COCO PLANA ANGOSTA X 5",
-        imagen: "../statics/img/Hogar/BOMBILLA PERITA COCO PLANA ANGOSTA X 5.jpeg",
-        descripcion: "Bombillas de Acero inoxidable planas. Metamate premium. Largo: 17 cm Color: Único.",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 9999
-
-    }
-
-    ,
-
-    {
-        id:"hogar-06",
-        producto:"BOTELLA SPORT 500 ML",
-        imagen: "../statics/img/Hogar/botella_sport.jpg",
-        descripcion: "Fabricada en Acero inoxidable Doble Capa de Altísima calidad.",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 16999
-
-    }
-
-    ,
-
-    {
-        id:"hogar-07",
-        producto:"CALCULADORA",
-        imagen: "../statics/img/Hogar/calculadora.jpg",
-        descripcion: "Calculadoara con Visor LCD de 12 dígitos grandes, cálculo rápido de Costo/ Margen/ Precio de Venta, selector de Redondeo y de Punto decimal, Cálculo de Impuesto con tasa programable, 4 memorias de cálculo.",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 6999
-
-    }
-
-    ,
-
-    {
-        id:"hogar-08",
-        producto:"DELANTAL MANOPLA Y AGARRADERA ",
-        imagen: "../statics/img/Hogar/delantal.jpeg",
-        descripcion: "MEDIDAS: DELANTAL DE 75CM X 50CM, MANOPLA 26CM APROX Y AGARRADERA DE 18CM APROX",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 14999
-
-    }   
-
-    ,
-
-    {
-        id:"hogar-09",
-        producto:"GUANTES DE SILICONA",
-        imagen: "../statics/img/Hogar/guantes.jpeg",
-        descripcion: "Gran elasticidad y resistencia al calor: -60 °C a 230 °C. Talle: Universal. Medidas: 31,5cm de largo X 13cm de ancho. Peso: 170 g (el par). COLOR: AZUL, ROSA Y VERDE.  ",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 8999
-
-    }   
-
-    ,
-
-    {
-        id:"hogar-10",
-        producto:"JARRA FAMILIAR 5 LITROS 4 VASOS",
-        imagen: "../statics/img/Hogar/jarra familiar.jpg",
-        descripcion: "Linda y cómoda jarra familiar con 4 vasos plásticos, libres de BPA. Cuadrada, de 25 cm de alto x 16,5 cm de ancho.",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 7999
-
-    }   
-
-    ,
-
-    {
-        id:"hogar-11",
-        producto:"JARRO MATE LISTO ALUMINIO",
-        imagen: "../statics/img/Hogar/JARRO MATE LISTO ALUMINIO.jpeg",
-        descripcion: "Características: Mate autocebante de plástico polipropileno, con base aluminio, cuenta con bombilla de bronce niquelado incorporada. Colores: Verde, azul, rojo, rosa y lila",
-        categoria: {
-            nombre: "Hogar",
-            id:"hogares"
-        },
-        precio: 7999
-
-    }   
-
-    ,
 
     {
         id:"hogar-12",
@@ -169,54 +63,85 @@ const hogarproductos = [
         },
         precio: 48999
 
-    }   
-
-    ,
+    },
 
     {
-        id:"hogar-13",
-        producto:"JUEGO DE SABANAS ESTAMPADAS KING",
-        imagen: "../statics/img/Hogar/JUEGO DE SABANAS ESTAMPADAS KING.jpg",
-        descripcion: "Juego de sabanas de 4 piezas, Calidad premium, Atemporal con atractivo elegante. Composición 70% algodón y 30% microfibra.",
+        id:"accesorios-28",
+        producto:"VALIJA PIERRE CARDIN CARRY ON 20 PULG RIGIDA",
+        imagen: "../statics/img/Acc/valija-pierre.jpg",
+        descripcion: "Marca: Pierre Cardín, Medidas: 53 x 20 x 33 cm (alto x profundidad x ancho), Material ABS.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Accesorio",
+            id:"Accesorios"
         },
-        precio: 38999
-
-    }   
-
-    ,
+        precio: 87999
+  
+    },
 
     {
-        id:"hogar-14",
-        producto:"LÁMPARA LED MATAMOSQUITOS",
-        imagen: "../statics/img/Hogar/LAMPARA-led.jpg",
-        descripcion: "Lámpara Foco Led BAJO CONSUMO y Mata Moscas Mosquitos Insectos, practica y fácil de instalar,",
+        id:"fitness-13",
+        producto:"INFLADOR DE ALUMINIO MULTIUSO",
+        imagen: "../statics/img/Fitness/INFLADOR DE ALUMINIO MULTIUSO.jpg",
+        descripcion: "Inflador de aluminio, con mango rebatible tipo T y pie plegables 90 grados. INCLUYE: Pico auto, pico bici común, pico para inflables y pico aguja para pelotas.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
         },
-        precio: 7999
+        precio: 6999
 
-    }   
-
-    ,
+    },
 
     {
-        id:"hogar-15",
-        producto:"MATE TERMICO CON BOMBILLA 236 ML",
-        imagen: "../statics/img/Hogar/MATE TERMICO CON BOMBILLA 236 ML.jpg",
-        descripcion: "Mate doble pared de acero Inoxidable. Bombilla de acero inoxidable. Apto Frio calor. Ideal para Terere y Mate. ",
+        id:"fitness-16",
+        producto:"MOCHILA CAMPING ALPINE SKATE",
+        imagen: "../statics/img/Fitness/MOCHILA CAMPING ALPINE SKATE.jpg",
+        descripcion: "Medidas: 54x35x16cm. Capacidad de 45+5L, espalda y tiras acolchonadas con tela mesh, tiras regulables.",
         categoria: {
-            nombre: "Hogar",
-            id:"hogares"
+            nombre: "Fitness",
+            id:"fit"
         },
-        precio: 20999
+        precio: 67999
 
-    }   
+    },
 
-    ,
+    {
+        id:"indumentaria-10",
+        producto:"CAMPERA ROMPEVIENTO REVERSIBLE",
+        imagen: "../statics/img/Indumentaria/CAMPERA ROMPEVIENTO REVERSIBLE.jpg",
+        descripcion: "Campera bomber reversible importada . Tela rompeviento. Ideal para salir y para el día a día.",
+        categoria: {
+            nombre: "Indumentaria",
+            id:"ind"
+        },
+        precio: 74999
+
+    },
+
+    {
+        id:"indumentaria-17",
+        producto:"REMERON BORDADO",
+        imagen: "../statics/img/Indumentaria/REMERON BORDADO.jpeg",
+        descripcion: "Remeron - vestido bambula bordada con detalles en broderie. Colores: BLANCO CREMA ROSA VIOLETA ROJO AQUA CORAL",
+        categoria: {
+            nombre: "Indumentaria",
+            id:"ind"
+        },
+        precio: 22999
+
+    },
+
+    {
+        id:"accesorios-25",
+        producto:"SET GORRO Y BUFANDA TRENDY",
+        imagen: "../statics/img/Acc/set-gorro-bufanda.jpg",
+        descripcion: "Material: acrílico. Medidas bufanda: 14x110cm. Medidas gorro: 18x19cm.Colores: ROSA AQUA LILA.",
+        categoria: {
+            nombre: "Accesorio",
+            id:"Accesorios"
+        },
+        precio: 24999
+  
+    },
 
     {
         id:"hogar-16",
@@ -230,7 +155,6 @@ const hogarproductos = [
         precio: 20999
 
     }   
-
 ];
 
 const contenedorProductos = document.querySelector("#contenedorProductos");
