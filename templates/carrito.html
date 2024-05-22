@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../statics/css/header_footer.css" >
+    <link rel="shortcut icon" href="../statics/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../statics/css/header_footer.css">
     <link rel="stylesheet" href="../statics/css/carrito.css">
 
     <title>Carrito</title>
 </head>
-<body>
- 
 
-      <main>
-        <h1 class="titulo-carrito">Carrito</h1>
-        
-        <div class="contenedor-carrito"> 
-            <p id="carrito-vacio"  class="carrito-vacio">Tu carrito está vacio</p>
+<body>
+
+
+    <main>
+        <h1 class="titulo-carrito">Carrito de Compras</h1>
+
+        <div class="contenedor-carrito">
+            <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacio</p>
 
             <div id="carrito-productos">
-                    <!-- COMPLETADO CON JS -->
+                <!-- COMPLETADO CON JS -->
             </div>
             <div id="carrito-acciones">
-                    <div class="carrito-acciones-izquierda">
-                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                <div class="carrito-acciones-izquierda">
+                    <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                </div>
+                <div class="carrito-acciones-derecha">
+                    <div class="carrito-acciones-total">
+                        <p>Total:</p>
+                        <p id="total"></p>
                     </div>
-                    <div class="carrito-acciones-derecha">
-                        <div class="carrito-acciones-total">
-                            <p>Total:</p>
-                            <p id="total"></p>
-                        </div>
-                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
-                    </div>
+                    <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                </div>
             </div>
 
-                <p id="carrito-comprado">Muchas gracias por tu compra.</p>        
+            <p id="carrito-comprado">Muchas gracias por tu compra.</p>
         </div>
-      </main>
+    </main>
 
 
 
-   <!-- Script para el uso de iconos-->
-   <script
-   src="https://kit.fontawesome.com/81581fb069.js"
-   crossorigin="anonymous"
-    ></script>
+    <!-- Script para el uso de iconos-->
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
 
-    <script src="../statics/script/header-footer.js"></script>  
+    <script src="../statics/script/header-footer.js"></script>
     <script src="../statics/script/carrito.js"></script>
 </body>
+
 </html>
