@@ -45,7 +45,7 @@ html {
 .customer-support {
 	display: flex;
 	align-items: center;
-	gap: 2rem; /*Espacio entre elementos*/
+	gap: 2rem; 
 }
 
 .customer-support i {
@@ -84,6 +84,28 @@ html {
 	gap: 1rem;
 	cursor: pointer;
 }
+.container-user {
+  display: flex;
+  align-items: center;
+}
+
+.content-shopping-cart {
+  display: flex;
+  align-items: center;
+}
+
+.shopping-cart-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 10px; 
+}
+
+.shopping-cart-link i {
+  margin-right: 5px; 
+}
+
 
 .container-user .fa-user {
 	font-size: 3rem;
@@ -147,10 +169,10 @@ html {
 	width: 1.5rem;
 	height: 1px;
 	background-color: #fff;
-	position: absolute; /* Posiciono el elemento de manera absoluta dentro del contenedor */
+	position: absolute; 
 	bottom: -3px;
 	left: 50%;
-	transform: translate(-50%, 50%); /* Para centrar el elemento horizontal y verticalmente en relación a su contenedor  */
+	transform: translate(-50%, 50%); 
 	opacity: 0;
 	transition: all 0.3s ease;
 }

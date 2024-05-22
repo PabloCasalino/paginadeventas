@@ -18,13 +18,16 @@ var headerContent = `
     </div>
 
     <div class="container-user">
-      <i class="fa-solid fa-user"></i> <!--Icono usuario-->
-      <i class="fa-solid fa-basket-shopping"></i> <!--Icono carrito de compras-->
-      <div class="content-shopping-cart">
-                <a href="../templates/carrito.html" class="text">Carrito</a>
-                <span class="number" id="numero">(0)</span>
-      </div>
+    <i class="fa-solid fa-user"></i> <!--Icono usuario-->
+    <div class="content-shopping-cart">
+        <a href="./templates/carrito.html" class="shopping-cart-link">
+            <i class="fa-solid fa-basket-shopping"></i> <!--Icono carrito de compras-->
+            Carrito
+        </a>
+        <span class="number" id="numero">(0)</span>
     </div>
+  </div>
+  
 
   </div>
 </div>
