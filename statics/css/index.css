@@ -14,13 +14,13 @@
 
 /* Seccion categorias */
 
-.titulo-categorias{
-    text-align: center;
+.titulos{
+    text-align: left;
     font-style: italic;
     margin: 20px;
-    font-size: 1rem;
-}
+    font-size: 1.8rem;
 
+}
 .contenedor-categorias{
     display: grid;
     width: 100%;
@@ -28,6 +28,7 @@
     justify-content: space-around;
     height: 30vh;
     border-radius: 5%;
+    margin: 20px;
     
 }
 
@@ -36,7 +37,7 @@
     text-decoration: none;
     display:grid;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     box-shadow: 0px 0px 1px 1px whitesmoke;
     border-radius: 5%;
 }
@@ -48,12 +49,12 @@
     overflow: hidden;
 }
 
-#img-categorias{
+.img-categorias{
     width: 10vw;
-    height: 20vh;
+    height: 15vh;
 }
 
-#link-categorias{
+.link-categorias{
     text-align: center;
     font-size: 2rem;
     text-decoration: none;
@@ -61,22 +62,7 @@
 }
 
 
-#separacion{
-    width: auto;
-    height: 20px;
-    background-color: var(--primary-color);
-}
-
-
 /* Seccion destacados */
-
-.titulo-destacados{
-    text-align: left;
-    font-style: italic;
-    margin: 20px;
-    font-size: 1rem;
-
-}
 
 .img-hogar {
     height: 30vh;
@@ -135,7 +121,17 @@
     height: 5vh;
 }
 
+/***********************/
+/* Templates generales */
+/* ******************* */
 
+.titulos-templates{
+    text-align: center;
+ 
+    margin: 5px 0px 30px 0px;
+    font-size: 3rem;
+    background-color: var(--background-color);
+}
 
 
 /* ********************************** */

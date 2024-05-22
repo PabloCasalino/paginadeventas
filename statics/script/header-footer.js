@@ -21,7 +21,7 @@ var headerContent = `
       <i class="fa-solid fa-user"></i> <!--Icono usuario-->
       <i class="fa-solid fa-basket-shopping"></i> <!--Icono carrito de compras-->
       <div class="content-shopping-cart">
-          <a href="../templates/carrito.html" class="text">Carrito</a>
+          <a href="./../templates/carrito.html" class="text">Carrito</a>
           <span class="number" id="numero">(0)</span>
       </div>
     </div>
