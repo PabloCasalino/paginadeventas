@@ -1,3 +1,4 @@
+/*
 const hogarproductos = [
     {
         id:"fitness-01",
@@ -250,6 +251,37 @@ const hogarproductos = [
 
 
 ];
+*/
+function obtenerDatosDeAPI() {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://127.0.0.1:5000/productos', false); // false para modo sincrónico
+    xhr.send();
+  
+    if (xhr.status === 200) {
+        const data = JSON.parse(xhr.responseText);
+
+        // Filtrar los productos que tienen categoría "Fitness"
+        const arrayDeObjetos = data
+            .filter(item => item.categoria === 'fitness')
+            .map(item => ({
+                id: item.id,
+                producto: item.producto,
+                imagen: item.imagen,
+                descripcion: item.descripcion,
+                categoria: item.categoria,
+                precio: item.precio
+            }));
+
+        return arrayDeObjetos;
+    } else {
+        console.error('Hubo un problema con la solicitud XMLHttpRequest:', xhr.statusText);
+        return [];
+    }
+}
+
+// Usar los datos obtenidos de la API
+const hogarproductos = obtenerDatosDeAPI();
+console.log(hogarproductos);
 
 const contenedorProductos = document.querySelector("#contenedorProductos");
 let botonCarrito = document.querySelectorAll("#boton-carrito");
@@ -301,7 +333,7 @@ if (productosEnCarritoLS) {
 
 function agregarAlCarrito(e){
 
-    const idBoton = e.currentTarget.id;
+    const idBoton = Number(e.currentTarget.id);
     const productoAgregado = hogarproductos.find(producto => producto.id === idBoton);
 
     if(productosEnCarrito.some(producto => producto.id === idBoton)){
