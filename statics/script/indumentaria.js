@@ -240,7 +240,7 @@ const hogarproductos = [
 */
 function obtenerDatosDeAPI() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://paginadeventas.pythonanywhere.com/productos', false); // false para modo sincrónico
+    xhr.open('GET', 'https://paginadeventas.pythonanywhere.com/productos', false); // false para modo sincrónico
     xhr.send();
   
     if (xhr.status === 200) {
@@ -281,12 +281,12 @@ function cargarProductos(){
 
         const div = document.createElement("div"); // en cada iteración, crea un div contenedor
         div.classList.add("hogar-items"); // asigna la clase hogar-items al contenedor
-        div.innerHTML = `   
-        <img  class="img-hogar"  src="${hogarproducto.imagen}" alt="${hogarproducto.producto}"> // ------------
-        <h3 class="producto">${hogarproducto.producto}</h3>                                     // Genera el contenido
-        <p  class="descripcion">${hogarproducto.descripcion}</p>                                // html que lleva 
-        <h5 class="precio">$${hogarproducto.precio}</h5>                                        // el contenedor con los elementos
-        <button class="boton-carrito" id="${hogarproducto.id}">Agregar </button>                // de la lista hogarproducto
+        div.innerHTML = `
+        <img  class="img-hogar"  src="${hogarproducto.imagen}" alt="${hogarproducto.producto}"> 
+        <h3 class="producto">${hogarproducto.producto}</h3>                                     
+        <p  class="descripcion">${hogarproducto.descripcion}</p>                               
+        <h5 class="precio">$${hogarproducto.precio}</h5>                                       
+        <button class="boton-carrito" id="${hogarproducto.id}">Agregar </button>               
         
         `
         ;
