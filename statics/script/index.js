@@ -5,7 +5,7 @@ var headerContent = `
   <div class="container hero">
 
     <div class="customer-support">
-      <i class="fa-solid fa-headset"></i> <!--Icono auriculares-->
+    <i class="fa-solid fa-headset"></i> <!--Icono auriculares-->
       <div class="content-customer-support">
         <span class="text">Soporte al cliente</span>
         <span class="number">123-456-7890</span>
@@ -18,7 +18,7 @@ var headerContent = `
     </div>
 
     <div class="container-user">
-    <i class="fa-solid fa-user"></i> <!--Icono usuario-->
+   <a href="templates/tabla_productos.html"> <i class="fa-solid fa-user"></i> </a><!--Icono usuario-->
     <div class="content-shopping-cart">
         <a href="./templates/carrito.html" class="shopping-cart-link">
             <i class="fa-solid fa-basket-shopping"></i> <!--Icono carrito de compras-->
@@ -36,7 +36,7 @@ var headerContent = `
   <nav class="navbar container">
     <i class="fa-solid fa-bars"></i> <!--Icono menú hamburguesa-->
     <ul class="menu">
-      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="index.html">Inicio</a></li>
       <li><a href="#">Acerca de</a></li>
        <li><a href="./templates/suscribirse.html">Registro</a></li>
       <li><a href="#">Más</a></li>
