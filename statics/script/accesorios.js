@@ -401,46 +401,6 @@ const hogarproductos = [
     }   
   ];
 */
-/* 
-let hogarproductos = [];
-
-fetch("http://127.0.0.1:5000/productos")
-    .then(response => response.json())
-    .then(data => {
-        hogarproductos = data;
-        cargarProductos(hogarproductos);
-    })
-
-console.log(hogarproductos);
-*/
-/* 
-// Paso 1: Hacer una solicitud a la API
-fetch('http://127.0.0.1:5000/productos') // Reemplaza con la URL de tu API
-  .then(response => {
-    // Paso 2: Convertir la respuesta a JSON
-    if (!response.ok) {
-      throw new Error('Error' + response.statusText);
-    }
-    return response.json();
-  })
-  .then(data => {
-    // Paso 3: Almacenar los datos en un array de objetos
-    const arrayDeObjetos = data.map(item => ({
-      // Asigna las propiedades del objeto según los datos de tu API
-      id: item.id,
-      name: item.name,
-      value: item.value
-    }));
-    
-    // Puedes ahora usar el arrayDeObjetos como necesites
-    console.log(arrayDeObjetos);
-  })
-  .catch(error => {
-    console.error('Hubo un problema con la solicitud fetch:', error);
-  });
-
-  */
-
 
   
 //   function obtenerDatosDeAPI() {
@@ -473,7 +433,7 @@ fetch('http://127.0.0.1:5000/productos') // Reemplaza con la URL de tu API
 
 function obtenerDatosDeAPI() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://127.0.0.1:5000/productos', false); // false para modo sincrónico
+    xhr.open('GET', 'http://paginadeventas.pythonanywhere.com/productos', false); // false para modo sincrónico
     xhr.send();
   
     if (xhr.status === 200) {
