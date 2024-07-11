@@ -18,7 +18,7 @@ function modificar() {
 
     console.log(datos);
 
-    let url = "http://paginadeventas.pythonanywhere.com/update/"+id
+    let url = "https://paginadeventas.pythonanywhere.com/update/"+id
     var options = {
         body: JSON.stringify(datos),
         method: 'PUT',

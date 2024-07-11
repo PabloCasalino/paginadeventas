@@ -161,7 +161,7 @@ const hogarproductos = [
 */
 function obtenerDatosDeAPI() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://paginadeventas.pythonanywhere.com/productos', false); // false para modo sincrónico
+    xhr.open('GET', 'https://paginadeventas.pythonanywhere.com/productos', false); // false para modo sincrónico
     xhr.send();
   
     if (xhr.status === 200) {
