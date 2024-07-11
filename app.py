@@ -16,8 +16,13 @@ app = Flask(__name__)
 CORS(app)
 
 # Configurar a la app la DB
+<<<<<<< HEAD
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://usuario:contraseña@localhost:3306/nombre_de_la_base_de_datos'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:1234@localhost:3306/paginadeventas'
+=======
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://  
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:vinchuca123@localhost:3306/paginadeventas'
+>>>>>>> origin/gaston
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Crear un objeto db, para informar a la app que se trabajará con sqlalchemy
@@ -88,6 +93,7 @@ def productos():
     return jsonify(data_serializada)
    
 
+<<<<<<< HEAD
 # # Modificar un registro
 # @app.route('/update/<id>', methods=['PUT'])
 # def update(id):
@@ -114,6 +120,8 @@ def productos():
     
 #     return jsonify(data_serializada)
 
+=======
+>>>>>>> origin/gaston
 # Ruta para actualizar un producto por su ID
 @app.route('/update/<int:id>', methods=['PUT'])
 def update_producto(id):
@@ -168,4 +176,8 @@ def borrar(id):
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     app.run(host='0.0.0.0',debug=True, use_debugger=False, use_reloader=False)
+=======
+    app.run(debug=True, use_debugger=False, use_reloader=False)
+>>>>>>> origin/gaston

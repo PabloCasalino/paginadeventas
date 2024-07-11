@@ -7,58 +7,54 @@
   <link rel="shortcut icon" href="./statics/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./statics/css/header_footer.css">
   <link rel="stylesheet" href="statics/css/index.css">
-
-  <title>A ver Que Hay ...?</title>
+  <title>A ver Que Hay...?</title>
 </head>
 
 <body>
   <!-- Encabezados -->
-  <!-- Tomados desde index.js -->
+
   <header></header>
   <main>
-      <!-- Seccion Categorias -->
-<section>
-  <div class="link-categorias">
-    <h2 class="titulos-templates">CATEGORIAS</h2>
-</div>
-    <div class="contenedor-categorias">     
+
+    <div class="titulo-categorias">
+      <h1>CATEGORIAS</h1>
+    </div>
+    <section class="contenedor-categorias">
       <div class="categorias-items">
-        <a class="link-categorias" href="./templates/accesorios.html">
-          <img class = "img-categorias" src="./statics/img/Acc/bolso.png" alt="Accesorios">
-          Accesorios
+
+        <a id="link-categorias" href="./templates/accesorios.html">
+          <img id="img-categorias" src="./statics/img/Acc/bolso.png" alt="Accesorios">
+          <p>Accesorios</p>  
         </a>
       </div>
       <div class="categorias-items">
 
-        <a class="link-categorias" href="./templates/hogar.html">
-          <img class = "img-categorias" src="./statics/img/Hogar/hogar.png" alt="Hogar">
-          Hogar
+        <a id="link-categorias" href="./templates/hogar.html">
+          <img id="img-categorias" src="./statics/img/Hogar/hogar.png" alt="Hogar">
+          <p>Hogar</p>
         </a>
       </div>
       <div class="categorias-items">
-        <a class="link-categorias" href="./templates/fitness.html">
-          <img class = "img-categorias" src="./statics/img/Fitness/aptitud-fisica.png" alt="Fitness">
-          Fitness
+        <a id="link-categorias" href="./templates/fitness.html">
+          <img id="img-categorias" src="./statics/img/Fitness/aptitud-fisica.png" alt="Fitness">
+          <p>Fitness</p>
         </a>
       </div>
       <div class="categorias-items">
 
-        <a class="link-categorias" href="./templates/indumentaria.html">
-          <img class = "img-categorias" src="./statics/img/Indumentaria/sudadera-con-capucha.png" alt="Indumentaria">
-          Indumentaria
+        <a id="link-categorias" href="./templates/indumentaria.html">
+          <img id="img-categorias" src="./statics/img/Indumentaria/sudadera-con-capucha.png" alt="Indumentaria">
+          <p>Indumentaria</p>
         </a>
       </div>
+    </section>
+
+
+     <div class="titulo-destacados">
+      <h1>Destacados</h1>
     </div>
 
-  </section>
-
-        <!-- SECCION DESTACADOS -->
-    <section >
-          <div class="titulo-destacados">
-      <h2 class="titulos-templates">Destacados</h2>
-    </div>
-
-      <div class="contenedor-hogar" id="contenedorProductos"></div>
+    <section class="contenedor-hogar" id="contenedorProductos">
       <!-- COMPLETADO CON JS -->
     </section>
   </main>

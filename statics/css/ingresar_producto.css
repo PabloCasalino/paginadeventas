@@ -35,7 +35,11 @@ form{
     justify-content: center;
 }
 
+<<<<<<< HEAD
 .entrada input, .entrada #categoria{
+=======
+.entrada input, .entrada #categoria,#producto,#id{
+>>>>>>> origin/gaston
   width: 100%;
   background: #24303c;
   padding: 10px;

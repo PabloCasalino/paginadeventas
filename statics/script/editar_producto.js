@@ -34,7 +34,11 @@ function modificar() {
             alert("Registro modificado")
 
             //Puedes utilizar window.location.href para obtener la URL actual, redirigir a otras páginas
+<<<<<<< HEAD
            window.location.href = "../templates/tabla_productos.html";
+=======
+           window.location.href = "../../templates/tabla_productos.html";
+>>>>>>> origin/gaston
           
         })
         .catch(err => {

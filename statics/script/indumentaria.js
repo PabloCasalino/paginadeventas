@@ -281,12 +281,21 @@ function cargarProductos(){
 
         const div = document.createElement("div"); // en cada iteración, crea un div contenedor
         div.classList.add("hogar-items"); // asigna la clase hogar-items al contenedor
+<<<<<<< HEAD
         div.innerHTML = `
         <img  class="img-hogar"  src="${hogarproducto.imagen}" alt="${hogarproducto.producto}"> 
         <h3 class="producto">${hogarproducto.producto}</h3>                                     
         <p  class="descripcion">${hogarproducto.descripcion}</p>                               
         <h5 class="precio">$${hogarproducto.precio}</h5>                                       
         <button class="boton-carrito" id="${hogarproducto.id}">Agregar </button>               
+=======
+        div.innerHTML = `   
+        <img  class="img-hogar"  src="${hogarproducto.imagen}" alt="${hogarproducto.producto}"> 
+        <h3 class="producto">${hogarproducto.producto}</h3>                                     
+        <p  class="descripcion">${hogarproducto.descripcion}</p>                                 
+        <h5 class="precio">$${hogarproducto.precio}</h5>                                        
+        <button class="boton-carrito" id="${hogarproducto.id}">Agregar </button>                
+>>>>>>> origin/gaston
         
         `
         ;

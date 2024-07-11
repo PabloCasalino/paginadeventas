@@ -30,7 +30,11 @@ function guardar() {
             console.log("creado")
             alert("Grabado")
             // Devuelve el href (URL) de la página actual
+<<<<<<< HEAD
             window.location.href = "tabla_productos.html";  
+=======
+            window.location.href = "../../templates/tabla_productos.html";  
+>>>>>>> origin/gaston
             
         })
         .catch(err => {
