@@ -30,6 +30,8 @@ var headerContent = `
                 <span class="number" id="numero">(0)</span>
       </div>
     </div>
+  </div>
+  
 
   </div>
 </div>

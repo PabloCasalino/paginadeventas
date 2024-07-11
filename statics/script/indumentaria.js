@@ -1,3 +1,5 @@
+// Cración de la lista hogar productos con la información necesaria de los items a cargar en la página indumentaria.html
+
 
 /*
 const hogarproductos = [
@@ -272,30 +274,33 @@ const contenedorProductos = document.querySelector("#contenedorProductos");
 let botonCarrito = document.querySelectorAll("#boton-carrito");
 const numero = document.querySelector("#numero");   
 
+// Esta funcion se encarga de recorrer la lista hogarproductos 
 function cargarProductos(){
 
     hogarproductos.forEach(hogarproducto => {
 
-        const div = document.createElement("div");
-        div.classList.add("hogar-items");
+        const div = document.createElement("div"); // en cada iteración, crea un div contenedor
+        div.classList.add("hogar-items"); // asigna la clase hogar-items al contenedor
         div.innerHTML = `   
-        <img  class="img-hogar"  src="${hogarproducto.imagen}" alt="${hogarproducto.producto}">
-        <h3 class="producto">${hogarproducto.producto}</h3>
-        <p  class="descripcion">${hogarproducto.descripcion}</p>
-        <h5 class="precio">$${hogarproducto.precio}</h5>
-        <button class="boton-carrito" id="${hogarproducto.id}">Agregar </button>
+        <img  class="img-hogar"  src="${hogarproducto.imagen}" alt="${hogarproducto.producto}"> 
+        <h3 class="producto">${hogarproducto.producto}</h3>                                     
+        <p  class="descripcion">${hogarproducto.descripcion}</p>                                 
+        <h5 class="precio">$${hogarproducto.precio}</h5>                                        
+        <button class="boton-carrito" id="${hogarproducto.id}">Agregar </button>                
         
         `
         ;
-        contenedorProductos.append(div);
+        contenedorProductos.append(div);  // agrega los elementos al div
 
     })
 
-    actualizarBotonesCarrito();
+    actualizarBotonesCarrito(); // llama a la funcion actualizarBotonesCarrito()
 
 } ;
 cargarProductos();
 
+// esta funcion toma todos los boton-carrito y se cea un event listenner para que al hacer click en el boton, 
+// llame a la funcion agregarAlCarrito 
 function actualizarBotonesCarrito(){
     botonCarrito = document.querySelectorAll(".boton-carrito");
 
@@ -305,8 +310,11 @@ function actualizarBotonesCarrito(){
     })
 
 };
+// Declara una variable productosEnCarrito sin inicializarla. Esta variable se usará para almacenar los productos que están en el carrito.
 let productosEnCarrito;
 
+// Utiliza localStorage.getItem("productos-en-carrito") para obtener el valor almacenado bajo la clave "productos-en-carrito". 
+// Este valor es una cadena JSON que representa los productos en el carrito.
 let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
 if (productosEnCarritoLS) {

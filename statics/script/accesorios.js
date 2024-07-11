@@ -402,34 +402,6 @@ const hogarproductos = [
   ];
 */
 
-  
-//   function obtenerDatosDeAPI() {
-//     const xhr = new XMLHttpRequest();
-//     xhr.open('GET', 'http://127.0.0.1:5000/productos', false); // false para modo sincrónico
-//     xhr.send();
-  
-//     if (xhr.status === 200) {
-//       const data = JSON.parse(xhr.responseText);
-      
-//       const arrayDeObjetos = data.map(item => ({
-//         // Asigna las propiedades del objeto según los datos de tu API
-//         id: item.id,
-//         producto: item.producto,
-//         imagen:item.imagen,
-//         descripcion: item.descripcion,
-//         precio:item.precio
-//       }));
-      
-//       return arrayDeObjetos;
-//     } else {
-//       console.error('Hubo un problema con la solicitud XMLHttpRequest:', xhr.statusText);
-//       return [];
-//     }
-//   }
-  
-//   // Usar los datos obtenidos de la API
-//   const hogarproductos = obtenerDatosDeAPI();
-//   console.log(hogarproductos);
 
 function obtenerDatosDeAPI() {
     const xhr = new XMLHttpRequest();
@@ -461,20 +433,20 @@ function obtenerDatosDeAPI() {
 // Usar los datos obtenidos de la API
 const hogarproductos = obtenerDatosDeAPI();
 console.log(hogarproductos);
-  
- 
 
+
+  
 const contenedorProductos = document.querySelector("#contenedorProductos");
 let botonCarrito = document.querySelectorAll("#boton-carrito");
-const numero = document.querySelector("#numero");   
+const numero = document.querySelector("#numero");
 
-function cargarProductos(){
+function cargarProductos() {
 
-  hogarproductos.forEach(hogarproducto => {
+    hogarproductos.forEach(hogarproducto => {
 
-      const div = document.createElement("div");
-      div.classList.add("hogar-items");
-      div.innerHTML = `   
+        const div = document.createElement("div");
+        div.classList.add("hogar-items");
+        div.innerHTML = `   
       <img  class="img-hogar"  src="${hogarproducto.imagen}" alt="${hogarproducto.producto}">
       <h3 class="producto">${hogarproducto.producto}</h3>
       <p  class="descripcion">${hogarproducto.descripcion}</p>
@@ -482,23 +454,23 @@ function cargarProductos(){
       <button class="boton-carrito" id="${hogarproducto.id}">Agregar </button>
       
       `
-      ;
-      contenedorProductos.append(div);
+            ;
+        contenedorProductos.append(div);
 
-  })
+    })
 
-  actualizarBotonesCarrito();
+    actualizarBotonesCarrito();
 
-} ;
+};
 cargarProductos();
 
-function actualizarBotonesCarrito(){
-  botonCarrito = document.querySelectorAll(".boton-carrito");
+function actualizarBotonesCarrito() {
+    botonCarrito = document.querySelectorAll(".boton-carrito");
 
-  botonCarrito.forEach(boton => {
-      boton.addEventListener("click",agregarAlCarrito);
+    botonCarrito.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
 
-  })
+    })
 
 };
 let productosEnCarrito;
@@ -506,34 +478,35 @@ let productosEnCarrito;
 let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
 if (productosEnCarritoLS) {
-  productosEnCarrito = JSON.parse(productosEnCarritoLS);
-  actualizarNumero();
-} else{
-  productosEnCarrito = [];
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+    actualizarNumero();
+} else {
+    productosEnCarrito = [];
 }
 
-function agregarAlCarrito(e){
+function agregarAlCarrito(e) {
+
 
   const idBoton = Number(e.currentTarget.id);
   const productoAgregado = hogarproductos.find(producto => producto.id === idBoton);
 
-  if(productosEnCarrito.some(producto => producto.id === idBoton)){
-      const index =    productosEnCarrito.findIndex(producto => producto.id ===idBoton);
-      productosEnCarrito[index].cantidad++;
-  
-  } else{
-      productoAgregado.cantidad = 1;
-      productosEnCarrito.push(productoAgregado);
-      
-  }
+    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
+        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+        productosEnCarrito[index].cantidad++;
 
-  actualizarNumero();
+    } else {
+        productoAgregado.cantidad = 1;
+        productosEnCarrito.push(productoAgregado);
 
-  localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    }
+
+    actualizarNumero();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 function actualizarNumero() {
-  let numeroJS = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad,0);
-  numero.innerHTML = numeroJS;
+    let numeroJS = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    numero.innerHTML = numeroJS;
 
 }
 
