@@ -15,10 +15,16 @@
 /* Seccion categorias */
 
 .titulo-categorias{
-    text-align: center;
+    /* text-align: center;
     font-style: italic;
     margin: 20px;
-    font-size: 1rem;
+    font-size: 1rem; */
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: #333;   
+    font-family: Arial, sans-serif; 
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .contenedor-categorias{
@@ -28,6 +34,7 @@
     justify-content: space-around;
     height: 30vh;
     border-radius: 5%;
+    margin-bottom: 2rem;
     
 }
 
@@ -67,14 +74,34 @@
     background-color: var(--primary-color);
 }
 
+/* Banner 
+
+#banner{
+    text-align: center;
+}
+
+#banner img{
+    width: 100vw;
+    height: 100vh;
+
+} */
+
 
 /* Seccion destacados */
 
+
+
 .titulo-destacados{
-    text-align: left;
+    /* text-align: left;
     font-style: italic;
     margin: 20px;
-    font-size: 1rem;
+    font-size: 1rem; */
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #333;   
+    font-family: Arial, sans-serif; 
+    text-align: center;
+    margin-top: 2rem;
 
 }
 
@@ -144,10 +171,16 @@
 
 @media (max-width: 768px){
     .titulo-categorias{
-        text-align: left;
+        /* text-align: left;
         font-family: sans-serif;
         margin: 20px;
-        font-size: 1.5rem;
+        font-size: 1.5rem; */
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+        color: #333;   
+        font-family: Arial, sans-serif; 
+        text-align: center;
+        margin-top: 2rem;
     }
 
     .contenedor-categorias{
@@ -170,17 +203,23 @@
 
 
     .titulo-destacados{
-        text-align: left;
+        /* text-align: left;
         font-family: sans-serif;
         margin: 20px;
-        font-size: 1.5rem;
+        font-size: 1.5rem; */
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+        color: #333;   
+        font-family: Arial, sans-serif; 
+        text-align: center;
+        margin-top: 2rem;
     }
 
-    .contenedor-destacados{
+    .contenedor-hogar{
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(1,auto);
-        grid-template-rows: repeat(6,auto);
+        grid-template-columns: repeat(1,auto); 
+        grid-template-rows: repeat(1,auto);
         gap: 10px;
         padding: 10px;
         

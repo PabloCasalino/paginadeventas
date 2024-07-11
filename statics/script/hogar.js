@@ -88,7 +88,7 @@ const hogarproductos = [
         id:"hogar-07",
         producto:"CALCULADORA",
         imagen: "../statics/img/Hogar/calculadora.jpg",
-        descripcion: "Calculadoara con Visor LCD de 12 dígitos grandes, cálculo rápido de Costo/ Margen/ Precio de Venta, selector de Redondeo y de Punto decimal, Cálculo de Impuesto con tasa programable, 4 memorias de cálculo.",
+        descripcion: "Calculadora con Visor LCD de 12 dígitos grandes, cálculo rápido de Costo/ Margen/ Precio de Venta, selector de Redondeo y de Punto decimal, Cálculo de Impuesto con tasa programable, 4 memorias de cálculo.",
         categoria: {
             nombre: "Hogar",
             id:"hogares"

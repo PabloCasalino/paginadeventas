@@ -14,11 +14,16 @@ var headerContent = `
 
     <div class="container-logo">  
       <img src="./statics/img/traced-logo_fondo_bco (1).ico" alt="" id="logo-img">
-      <h1 class="logo"><a href="#">A ver Que Hay ...?</a></h1>
+      <h1 class="logo"><a href="#">A ver Que Hay...?</a></h1>
     </div>
 
     <div class="container-user">
-      <i class="fa-solid fa-user"></i> <!--Icono usuario-->
+      
+    <div class="login-icono">
+      <a href="../templates/login.html">
+        <i class="fa-solid fa-user"></i> <!--Icono usuario-->
+      </a>
+    </div>
       <i class="fa-solid fa-basket-shopping"></i> <!--Icono carrito de compras-->
       <div class="content-shopping-cart">
                 <a href="../templates/carrito.html" class="text">Carrito</a>

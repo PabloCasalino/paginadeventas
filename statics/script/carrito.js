@@ -12,8 +12,8 @@ const botonComprar = document.querySelector("#carrito-acciones-comprar");
 
 
 function cargarProductosCarrito (){
-    if (productosEnCarrito  && productosEnCarrito.length >= 0){
-        
+    if (productosEnCarrito  && productosEnCarrito.length > 0){
+        console.log("Productos en carrito: ", productosEnCarrito);
         contenedorCarritoVacio.classList.add("disabled");
         contenedorCarritoProductos.classList.remove("disabled");
         contenedorCarritoAcciones.classList.remove("disabled");
@@ -53,7 +53,7 @@ function cargarProductosCarrito (){
     
     }else{
         
-
+        console.log("Carrito vacío");
         contenedorCarritoVacio.classList.remove("disabled");
         contenedorCarritoProductos.classList.add("disabled");
         contenedorCarritoAcciones.classList.add("disabled");
@@ -61,7 +61,7 @@ function cargarProductosCarrito (){
     }
     
 };
-cargarProductosCarrito();
+
 
 
 
@@ -76,7 +76,7 @@ function actualizarBotonesEliminar(){
 };
 
 function eliminarDelCarrito (e) {
-    const idBoton = e.currentTarget.id;
+    const idBoton = parseInt(e.currentTarget.id, 10);
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
     
     productosEnCarrito.splice(index,1);
@@ -101,8 +101,11 @@ botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito(){
     productosEnCarrito.length=0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    console.log("Carrito comprado");
     contenedorCarritoVacio.classList.add("disabled");
     contenedorCarritoProductos.classList.add("disabled");
     contenedorCarritoAcciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
 }
+
+cargarProductosCarrito();
